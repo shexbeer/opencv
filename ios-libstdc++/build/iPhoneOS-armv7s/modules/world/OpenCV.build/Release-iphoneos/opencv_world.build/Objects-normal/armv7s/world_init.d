@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/christian/GIT/opencv/modules/world/src/world_init.cpp \
+  /Users/christian/GIT/opencv/modules/world/src/precomp.hpp \
+  /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp \
+  /Users/christian/GIT/opencv/modules/video/include/opencv2/video.hpp \
+  /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/cvdef.h \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/version.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/base.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/ptr.inl.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/traits.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/matx.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/types.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/mat.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/operations.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  /Users/christian/GIT/opencv/modules/imgproc/include/opencv2/imgproc.hpp \
+  /Users/christian/GIT/opencv/modules/video/include/opencv2/video/background_segm.hpp \
+  /Users/christian/GIT/opencv/modules/features2d/include/opencv2/features2d.hpp \
+  /Users/christian/GIT/opencv/modules/flann/include/opencv2/flann/miniflann.hpp \
+  /Users/christian/GIT/opencv/modules/flann/include/opencv2/flann/defines.h \
+  /Users/christian/GIT/opencv/modules/flann/include/opencv2/flann/config.h \
+  /Users/christian/GIT/opencv/modules/nonfree/include/opencv2/nonfree.hpp \
+  /Users/christian/GIT/opencv/modules/nonfree/include/opencv2/nonfree/features2d.hpp \
+  /Users/christian/GIT/opencv/modules/ml/include/opencv2/ml.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/core_c.h \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/types_c.h \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/utility.hpp \
+  /Users/christian/GIT/opencv/modules/world/include/opencv2/world.hpp

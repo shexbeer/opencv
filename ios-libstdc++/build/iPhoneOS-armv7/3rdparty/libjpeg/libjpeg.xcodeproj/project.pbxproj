@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              73F467FA0EB34214A26154A8 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = F448E96432C34E59861E199F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            AA305579D8794EA6B1D8DB61 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            B2745921B6E6493B886F508E /* PBXTargetDependency */,
+                            A418231BCDB2473D80FB9129 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              ACD9E197A47545968A651774 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 2EAF7CC3DE58402DA4AFFF14 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            E0BD1B47269F4C16BD2C6296 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              44FDA692D0884A5B8ADB9AD1 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D72EDDF901D94587AAAF50ED /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            27F20EA2C9834B43B3B1E9AA /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            E33F694B152D478DA3AE2AF3 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              705247A35D3C4315AFF49ACF /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = A7E7F6C9CBF94D419EB72D03 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            49C3AE485DF54A03BEEF7B00 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            8C516765A06F4C1FB2F147CA /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+03EDCA6C35C141849A1D2EC1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F317E22AA3F646C0997E63D5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+7255E67BF9D44EE8A7C3BE60 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXBuildFile; fileRef = 4CC5AD9E9FDA406EAB16EEFE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jaricom.c */; settings = { COMPILER_FLAGS = ""; }; };
+FFB59750D2F04A9BA707985F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXBuildFile; fileRef = FF0950B5C2E54468B436B07C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+A59B64BCC5964E578814B7CE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXBuildFile; fileRef = A0D8F5986E554A38AD036440 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+A072D3DB320644B1A7245FF5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXBuildFile; fileRef = C7A4E8C9EF644BB2B52C307F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+C205F56568E94C0A87E6A50A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXBuildFile; fileRef = 2B56D641878A4B67A2D99A74 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+BE4A2FF7F8BB4BF193022960 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXBuildFile; fileRef = 14E1CBBFB953464EA4A50B5E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+1E548ED438CB4103A00C4192 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = D234DBD2EEFB4FB6AB2004A6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcdctmgr.c */; settings = { COMPILER_FLAGS = "-O1"; }; };
+320DEA803FA842A89B5DA0A8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXBuildFile; fileRef = 967B3A9482914CFBBE8A39AC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jchuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+BEB08BD56F31474987F6FA56 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXBuildFile; fileRef = B7EE1178D49A420DB263B279 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcinit.c */; settings = { COMPILER_FLAGS = ""; }; };
+38B7E2C138D04BA6B77B2892 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXBuildFile; fileRef = F174F18D925E4454B05EF3BD /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+47FD18C564D647B1B32BB7B2 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXBuildFile; fileRef = 0609880E630143F78D70AB9F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+03D76A993EC24FC0BB605334 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXBuildFile; fileRef = 6F7660205D294F28ABA76309 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+AACE56868D694F8A8A40CC5A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXBuildFile; fileRef = AE57990F4EF449619D14C2D6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcomapi.c */; settings = { COMPILER_FLAGS = ""; }; };
+C440B237DB8C43AEAE7AD98D /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXBuildFile; fileRef = C767B65E563F4054A942C12E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+37AEA5095EFD4136B1290678 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXBuildFile; fileRef = 328680713DB44E5AA26BD694 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcparam.c */; settings = { COMPILER_FLAGS = ""; }; };
+607EF780647D4F998705DE67 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXBuildFile; fileRef = 7B9907886EE541F7BA8DC86C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcprepct.c */; settings = { COMPILER_FLAGS = ""; }; };
+37CD2D7F4046414AB034354C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXBuildFile; fileRef = 05093C2159214EF985A50BAA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+EEA6FD6B819C409C9474AF16 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXBuildFile; fileRef = 425D1CA7A31142C6A88DED41 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jctrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+31ED80F7DA15412EABD83F52 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXBuildFile; fileRef = 4FFB1F60C6E249EAAE697AB1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapimin.c */; settings = { COMPILER_FLAGS = ""; }; };
+B7E5D42458AA4FF5887FAE4A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXBuildFile; fileRef = B5D813004336438C8B495D84 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapistd.c */; settings = { COMPILER_FLAGS = ""; }; };
+53E79B039F554C1CA3ED6EB6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXBuildFile; fileRef = 68B5E800DFF9466BB5468770 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdarith.c */; settings = { COMPILER_FLAGS = ""; }; };
+6D267EA7313B423CA1662619 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXBuildFile; fileRef = F7B62F35FA2043A993EC6894 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatadst.c */; settings = { COMPILER_FLAGS = ""; }; };
+A8314499C4FA41BD8EA33436 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = C606C89B7B604A948CA8568C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatasrc.c */; settings = { COMPILER_FLAGS = ""; }; };
+9EA45DA08E7D4585B638D2A1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = 63CF41888BCD4011AFFDA33C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcoefct.c */; settings = { COMPILER_FLAGS = ""; }; };
+B4E0B39DFEB34889AA65EF76 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXBuildFile; fileRef = 659B71591F5645B194233BCE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcolor.c */; settings = { COMPILER_FLAGS = ""; }; };
+8502A55F8FBB4C98A3EADDBC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXBuildFile; fileRef = E293620E8F2E4796A9DBF66B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdct.h */; settings = { COMPILER_FLAGS = ""; }; };
+8677D2B00D3A44ADA785E297 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = 1FB32E424CD54625A5A56ED3 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jddctmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+32E6A7DF681F41A9ABC84CC6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXBuildFile; fileRef = CF309210C3FC42C980F1BCBB /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdhuff.c */; settings = { COMPILER_FLAGS = ""; }; };
+45EE0A3A5D56426D8EDD1FAA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXBuildFile; fileRef = C4F4135F8F584049A7333618 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdinput.c */; settings = { COMPILER_FLAGS = ""; }; };
+B989B72FD90F4F4BAC02CF50 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXBuildFile; fileRef = 62D2D132BECA4ACE901D6DCC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmainct.c */; settings = { COMPILER_FLAGS = ""; }; };
+B45DA54EF60A4E5AA7B4B862 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXBuildFile; fileRef = B151EE7BF5024C5491A32031 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmarker.c */; settings = { COMPILER_FLAGS = ""; }; };
+65183A11C0FC4C9F9B3873E8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXBuildFile; fileRef = B7E05F5EC9AA4F2595516D59 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmaster.c */; settings = { COMPILER_FLAGS = ""; }; };
+01AB32F06AC34804BEBF2FE3 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXBuildFile; fileRef = DCC133699B494257916D267C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmerge.c */; settings = { COMPILER_FLAGS = ""; }; };
+DB35FB4B1EBD47FF9379AF58 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXBuildFile; fileRef = 5C66969C637741A394FBEA6B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdpostct.c */; settings = { COMPILER_FLAGS = ""; }; };
+CE36BA393EC54B5E97D490B2 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXBuildFile; fileRef = A93A9059780F4CCE8EBC34F1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdsample.c */; settings = { COMPILER_FLAGS = ""; }; };
+7AF84F8246D74F44825E8DF2 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXBuildFile; fileRef = 0C8216C057974437803A67D4 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdtrans.c */; settings = { COMPILER_FLAGS = ""; }; };
+45F9C4E4E14D42FF81DA0D17 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXBuildFile; fileRef = 1BFC79667D4F4E4195BB4FAD /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.c */; settings = { COMPILER_FLAGS = ""; }; };
+EC4B5AB0D7AE4096A890811D /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXBuildFile; fileRef = 09F1E428AD8F483DB57C7415 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.h */; settings = { COMPILER_FLAGS = ""; }; };
+05761057CB684CFAAE70B902 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = BF7613E845E543C0A7D10574 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+5415FBD36621404EA5861461 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = BA1109316C834AA5AB9FB0BE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+5FA053D72D994E49B3C45160 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXBuildFile; fileRef = 7BC95D77A1704A85B74C6D31 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+2D4C1B5F137140BC888A9E69 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXBuildFile; fileRef = B6BA38539D1A4F309A0B04D6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctflt.c */; settings = { COMPILER_FLAGS = ""; }; };
+FB5743AABEBF410FB4EEBF81 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXBuildFile; fileRef = EED1A89957AF4070BF2BA4C0 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctfst.c */; settings = { COMPILER_FLAGS = ""; }; };
+68B6FB95EAB94745B4B1D539 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXBuildFile; fileRef = D02C2658FEE04EC69F0FFA7E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctint.c */; settings = { COMPILER_FLAGS = ""; }; };
+C60FD4AFD7494CDFACBCCAFA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXBuildFile; fileRef = FCA2ECD50A1444D49E686827 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jinclude.h */; settings = { COMPILER_FLAGS = ""; }; };
+D2F817ECE3B0434BA71C2405 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = 5617D8D53E4049229BE52229 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemmgr.c */; settings = { COMPILER_FLAGS = ""; }; };
+B1E50DBCFD9244008548467E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = 6EC51EF6A81744E5894A6029 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemnobs.c */; settings = { COMPILER_FLAGS = ""; }; };
+94F80FCF362047B0AD0D4522 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXBuildFile; fileRef = 579F7D4C428745679FD05472 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemsys.h */; settings = { COMPILER_FLAGS = ""; }; };
+413E0CD2482C49F8B8832C21 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXBuildFile; fileRef = 5BE898DB4724468E9FE6F907 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmorecfg.h */; settings = { COMPILER_FLAGS = ""; }; };
+D28C6EA46BE94232A1BD3C3A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXBuildFile; fileRef = 553425759FB34B68B654A1A4 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpegint.h */; settings = { COMPILER_FLAGS = ""; }; };
+70FBC5A0BFDF4D37AB615ED3 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXBuildFile; fileRef = AD3C686ED5BD449BB16104B8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpeglib.h */; settings = { COMPILER_FLAGS = ""; }; };
+32636FD312E94801A99A382B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXBuildFile; fileRef = 745136001B784DD78D50262C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant1.c */; settings = { COMPILER_FLAGS = ""; }; };
+FEC1612D96304D89ADAD24EA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXBuildFile; fileRef = 5C01450D0FED40AE95B6AB9A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant2.c */; settings = { COMPILER_FLAGS = ""; }; };
+346FF366B96A47A88FA3EC73 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXBuildFile; fileRef = F98ECA9DC34D4B6DA0D37A41 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jutils.c */; settings = { COMPILER_FLAGS = ""; }; };
+8C7426845255467D8565A302 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXBuildFile; fileRef = 7B6547A8123F4897A96DC06F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jversion.h */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              DDBCA51DFCEF40609C213949 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              B0B065EC7BA74011B9A678D4 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              5ACEED18FE354326AA520E4D /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              7B4135D396204333A571294D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2D944DC7C9994266BF87FCA4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = CED61CCA5335444F9E2C8A83;
+                     remoteInfo = libjpeg;
+              };
+              4C48E0778B0E40E1971D7E16 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2D944DC7C9994266BF87FCA4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = ACD9E197A47545968A651774;
+                     remoteInfo = ZERO_CHECK;
+              };
+              34B2F4726FEE4483A17ED939 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2D944DC7C9994266BF87FCA4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 73F467FA0EB34214A26154A8;
+                     remoteInfo = ALL_BUILD;
+              };
+              357C9B6D72624C33B4F8ECF2 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2D944DC7C9994266BF87FCA4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = ACD9E197A47545968A651774;
+                     remoteInfo = ZERO_CHECK;
+              };
+              BE89ECDD34144553BBAE7852 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 2D944DC7C9994266BF87FCA4 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 73F467FA0EB34214A26154A8;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+F317E22AA3F646C0997E63D5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+4CC5AD9E9FDA406EAB16EEFE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jaricom.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jaricom.c"; path = "jaricom.c"; sourceTree = SOURCE_ROOT; };
+FF0950B5C2E54468B436B07C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapimin.c"; path = "jcapimin.c"; sourceTree = SOURCE_ROOT; };
+A0D8F5986E554A38AD036440 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcapistd.c"; path = "jcapistd.c"; sourceTree = SOURCE_ROOT; };
+C7A4E8C9EF644BB2B52C307F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcarith.c"; path = "jcarith.c"; sourceTree = SOURCE_ROOT; };
+2B56D641878A4B67A2D99A74 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccoefct.c"; path = "jccoefct.c"; sourceTree = SOURCE_ROOT; };
+14E1CBBFB953464EA4A50B5E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jccolor.c"; path = "jccolor.c"; sourceTree = SOURCE_ROOT; };
+D234DBD2EEFB4FB6AB2004A6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcdctmgr.c"; path = "jcdctmgr.c"; sourceTree = SOURCE_ROOT; };
+967B3A9482914CFBBE8A39AC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jchuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jchuff.c"; path = "jchuff.c"; sourceTree = SOURCE_ROOT; };
+B7EE1178D49A420DB263B279 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcinit.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcinit.c"; path = "jcinit.c"; sourceTree = SOURCE_ROOT; };
+F174F18D925E4454B05EF3BD /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmainct.c"; path = "jcmainct.c"; sourceTree = SOURCE_ROOT; };
+0609880E630143F78D70AB9F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmarker.c"; path = "jcmarker.c"; sourceTree = SOURCE_ROOT; };
+6F7660205D294F28ABA76309 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcmaster.c"; path = "jcmaster.c"; sourceTree = SOURCE_ROOT; };
+AE57990F4EF449619D14C2D6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcomapi.c"; path = "jcomapi.c"; sourceTree = SOURCE_ROOT; };
+C767B65E563F4054A942C12E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jconfig.h"; path = "jconfig.h"; sourceTree = SOURCE_ROOT; };
+328680713DB44E5AA26BD694 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcparam.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcparam.c"; path = "jcparam.c"; sourceTree = SOURCE_ROOT; };
+7B9907886EE541F7BA8DC86C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcprepct.c"; path = "jcprepct.c"; sourceTree = SOURCE_ROOT; };
+05093C2159214EF985A50BAA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jcsample.c"; path = "jcsample.c"; sourceTree = SOURCE_ROOT; };
+425D1CA7A31142C6A88DED41 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jctrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jctrans.c"; path = "jctrans.c"; sourceTree = SOURCE_ROOT; };
+4FFB1F60C6E249EAAE697AB1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapimin.c"; path = "jdapimin.c"; sourceTree = SOURCE_ROOT; };
+B5D813004336438C8B495D84 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdapistd.c"; path = "jdapistd.c"; sourceTree = SOURCE_ROOT; };
+68B5E800DFF9466BB5468770 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdarith.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdarith.c"; path = "jdarith.c"; sourceTree = SOURCE_ROOT; };
+F7B62F35FA2043A993EC6894 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatadst.c"; path = "jdatadst.c"; sourceTree = SOURCE_ROOT; };
+C606C89B7B604A948CA8568C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdatasrc.c"; path = "jdatasrc.c"; sourceTree = SOURCE_ROOT; };
+63CF41888BCD4011AFFDA33C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcoefct.c"; path = "jdcoefct.c"; sourceTree = SOURCE_ROOT; };
+659B71591F5645B194233BCE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdcolor.c"; path = "jdcolor.c"; sourceTree = SOURCE_ROOT; };
+E293620E8F2E4796A9DBF66B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdct.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jdct.h"; path = "jdct.h"; sourceTree = SOURCE_ROOT; };
+1FB32E424CD54625A5A56ED3 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jddctmgr.c"; path = "jddctmgr.c"; sourceTree = SOURCE_ROOT; };
+CF309210C3FC42C980F1BCBB /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdhuff.c"; path = "jdhuff.c"; sourceTree = SOURCE_ROOT; };
+C4F4135F8F584049A7333618 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdinput.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdinput.c"; path = "jdinput.c"; sourceTree = SOURCE_ROOT; };
+62D2D132BECA4ACE901D6DCC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmainct.c"; path = "jdmainct.c"; sourceTree = SOURCE_ROOT; };
+B151EE7BF5024C5491A32031 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmarker.c"; path = "jdmarker.c"; sourceTree = SOURCE_ROOT; };
+B7E05F5EC9AA4F2595516D59 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmaster.c"; path = "jdmaster.c"; sourceTree = SOURCE_ROOT; };
+DCC133699B494257916D267C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdmerge.c"; path = "jdmerge.c"; sourceTree = SOURCE_ROOT; };
+5C66969C637741A394FBEA6B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdpostct.c"; path = "jdpostct.c"; sourceTree = SOURCE_ROOT; };
+A93A9059780F4CCE8EBC34F1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdsample.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdsample.c"; path = "jdsample.c"; sourceTree = SOURCE_ROOT; };
+0C8216C057974437803A67D4 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdtrans.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jdtrans.c"; path = "jdtrans.c"; sourceTree = SOURCE_ROOT; };
+1BFC79667D4F4E4195BB4FAD /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jerror.c"; path = "jerror.c"; sourceTree = SOURCE_ROOT; };
+09F1E428AD8F483DB57C7415 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jerror.h"; path = "jerror.h"; sourceTree = SOURCE_ROOT; };
+BF7613E845E543C0A7D10574 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctflt.c"; path = "jfdctflt.c"; sourceTree = SOURCE_ROOT; };
+BA1109316C834AA5AB9FB0BE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctfst.c"; path = "jfdctfst.c"; sourceTree = SOURCE_ROOT; };
+7BC95D77A1704A85B74C6D31 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jfdctint.c"; path = "jfdctint.c"; sourceTree = SOURCE_ROOT; };
+B6BA38539D1A4F309A0B04D6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctflt.c"; path = "jidctflt.c"; sourceTree = SOURCE_ROOT; };
+EED1A89957AF4070BF2BA4C0 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctfst.c"; path = "jidctfst.c"; sourceTree = SOURCE_ROOT; };
+D02C2658FEE04EC69F0FFA7E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctint.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jidctint.c"; path = "jidctint.c"; sourceTree = SOURCE_ROOT; };
+FCA2ECD50A1444D49E686827 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jinclude.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jinclude.h"; path = "jinclude.h"; sourceTree = SOURCE_ROOT; };
+5617D8D53E4049229BE52229 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemmgr.c"; path = "jmemmgr.c"; sourceTree = SOURCE_ROOT; };
+6EC51EF6A81744E5894A6029 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jmemnobs.c"; path = "jmemnobs.c"; sourceTree = SOURCE_ROOT; };
+579F7D4C428745679FD05472 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemsys.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmemsys.h"; path = "jmemsys.h"; sourceTree = SOURCE_ROOT; };
+5BE898DB4724468E9FE6F907 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmorecfg.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jmorecfg.h"; path = "jmorecfg.h"; sourceTree = SOURCE_ROOT; };
+553425759FB34B68B654A1A4 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpegint.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpegint.h"; path = "jpegint.h"; sourceTree = SOURCE_ROOT; };
+AD3C686ED5BD449BB16104B8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpeglib.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jpeglib.h"; path = "jpeglib.h"; sourceTree = SOURCE_ROOT; };
+745136001B784DD78D50262C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant1.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant1.c"; path = "jquant1.c"; sourceTree = SOURCE_ROOT; };
+5C01450D0FED40AE95B6AB9A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant2.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jquant2.c"; path = "jquant2.c"; sourceTree = SOURCE_ROOT; };
+F98ECA9DC34D4B6DA0D37A41 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jutils.c */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.c"; fileEncoding = 4; name = "jutils.c"; path = "jutils.c"; sourceTree = SOURCE_ROOT; };
+7B6547A8123F4897A96DC06F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jversion.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "jversion.h"; path = "jversion.h"; sourceTree = SOURCE_ROOT; };
+78F68D25A7A749AB99CDC849 /* libjpeg */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "liblibjpeg.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              CB61C6B5DAF14ED5AC25584B  = {
+                     isa = PBXGroup;
+                     children = (
+                            FD62B389D82E48E692810EB9 /* Sources */,
+                            588302663A2D48F9AD58F8DB /* Resources */,
+                            21ECE83AB277410B9B3F8B9B /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              FD62B389D82E48E692810EB9 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            569AA5F2F4C04652AA48D67C /* ALL_BUILD */,
+                            28E81F18446C4A23B08FDE01 /* ZERO_CHECK */,
+                            DBB49B948F614B28AD99770B /* 3rdparty */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              588302663A2D48F9AD58F8DB /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              569AA5F2F4C04652AA48D67C /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3F5297ACF5CF432B922711C8 /* CMake Rules */,
+                            F317E22AA3F646C0997E63D5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              3F5297ACF5CF432B922711C8 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              28E81F18446C4A23B08FDE01 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            189FDB63153546898AE926EB /* CMake Rules */,
+                            F317E22AA3F646C0997E63D5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              189FDB63153546898AE926EB /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              DBB49B948F614B28AD99770B /* 3rdparty */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1246C8FFCC3D4782AB48D303 /* libjpeg */,
+                     );
+                     name = 3rdparty;
+                     sourceTree = "<group>";
+              };
+              1246C8FFCC3D4782AB48D303 /* libjpeg */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E91C3C8145464667A6F8A784 /* Source Files */,
+                            D56092E857DA430C8CADA6A3 /* Header Files */,
+                            F317E22AA3F646C0997E63D5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/CMakeLists.txt */,
+                     );
+                     name = libjpeg;
+                     sourceTree = "<group>";
+              };
+              E91C3C8145464667A6F8A784 /* Source Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4CC5AD9E9FDA406EAB16EEFE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jaricom.c */,
+                            FF0950B5C2E54468B436B07C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            A0D8F5986E554A38AD036440 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            C7A4E8C9EF644BB2B52C307F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcarith.c */,
+                            2B56D641878A4B67A2D99A74 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            14E1CBBFB953464EA4A50B5E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccolor.c */,
+                            D234DBD2EEFB4FB6AB2004A6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            967B3A9482914CFBBE8A39AC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jchuff.c */,
+                            B7EE1178D49A420DB263B279 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcinit.c */,
+                            F174F18D925E4454B05EF3BD /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            0609880E630143F78D70AB9F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            6F7660205D294F28ABA76309 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            AE57990F4EF449619D14C2D6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            328680713DB44E5AA26BD694 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcparam.c */,
+                            7B9907886EE541F7BA8DC86C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            05093C2159214EF985A50BAA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcsample.c */,
+                            425D1CA7A31142C6A88DED41 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jctrans.c */,
+                            4FFB1F60C6E249EAAE697AB1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            B5D813004336438C8B495D84 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            68B5E800DFF9466BB5468770 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdarith.c */,
+                            F7B62F35FA2043A993EC6894 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            C606C89B7B604A948CA8568C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            63CF41888BCD4011AFFDA33C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            659B71591F5645B194233BCE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            1FB32E424CD54625A5A56ED3 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            CF309210C3FC42C980F1BCBB /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            C4F4135F8F584049A7333618 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdinput.c */,
+                            62D2D132BECA4ACE901D6DCC /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            B151EE7BF5024C5491A32031 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            B7E05F5EC9AA4F2595516D59 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            DCC133699B494257916D267C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            5C66969C637741A394FBEA6B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            A93A9059780F4CCE8EBC34F1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdsample.c */,
+                            0C8216C057974437803A67D4 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            1BFC79667D4F4E4195BB4FAD /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.c */,
+                            BF7613E845E543C0A7D10574 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            BA1109316C834AA5AB9FB0BE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            7BC95D77A1704A85B74C6D31 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            B6BA38539D1A4F309A0B04D6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            EED1A89957AF4070BF2BA4C0 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            D02C2658FEE04EC69F0FFA7E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctint.c */,
+                            5617D8D53E4049229BE52229 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            6EC51EF6A81744E5894A6029 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            745136001B784DD78D50262C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant1.c */,
+                            5C01450D0FED40AE95B6AB9A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant2.c */,
+                            F98ECA9DC34D4B6DA0D37A41 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     name = "Source Files";
+                     sourceTree = "<group>";
+              };
+              D56092E857DA430C8CADA6A3 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            C767B65E563F4054A942C12E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jconfig.h */,
+                            E293620E8F2E4796A9DBF66B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdct.h */,
+                            09F1E428AD8F483DB57C7415 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.h */,
+                            FCA2ECD50A1444D49E686827 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jinclude.h */,
+                            579F7D4C428745679FD05472 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemsys.h */,
+                            5BE898DB4724468E9FE6F907 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmorecfg.h */,
+                            553425759FB34B68B654A1A4 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpegint.h */,
+                            AD3C686ED5BD449BB16104B8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jpeglib.h */,
+                            7B6547A8123F4897A96DC06F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jversion.h */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              21ECE83AB277410B9B3F8B9B /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            78F68D25A7A749AB99CDC849 /* libjpeg */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              CED61CCA5335444F9E2C8A83 /* libjpeg */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = CC2033738E324898A7A2331D /* Build configuration list for PBXNativeTarget "libjpeg" */;
+                     buildPhases = (
+                            1000FAC64F9346A38A051344 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            8F160D88F4444AA2A45082C2 /* PBXTargetDependency */,
+                     );
+                     name = libjpeg;
+                     productName = libjpeg;
+                     productReference = 78F68D25A7A749AB99CDC849 /* libjpeg */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              2D944DC7C9994266BF87FCA4 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 1993728E3F324E0399C22AE3 /* Build configuration list for PBXProject  "libjpeg" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            B0B065EC7BA74011B9A678D4 /* Debug */,
+                            5ACEED18FE354326AA520E4D /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = CB61C6B5DAF14ED5AC25584B;
+                     projectDirPath = "../../../../../3rdparty/libjpeg";
+                     projectRoot = "";
+                     targets = (
+                            73F467FA0EB34214A26154A8 /* ALL_BUILD */,
+                            ACD9E197A47545968A651774 /* ZERO_CHECK */,
+                            44FDA692D0884A5B8ADB9AD1 /* install */,
+                            CED61CCA5335444F9E2C8A83 /* libjpeg */,
+                            705247A35D3C4315AFF49ACF /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              0AE30904536E4AE7AE594C61 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              AA305579D8794EA6B1D8DB61 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              3DDF7010E84743FDADC7CD51 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              E0BD1B47269F4C16BD2C6296 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              C33D17EA34504CE6A38DEDA5 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              27F20EA2C9834B43B3B1E9AA /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              7180D5AD964840B096F284E6 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              49C3AE485DF54A03BEEF7B00 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              1000FAC64F9346A38A051344 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            7255E67BF9D44EE8A7C3BE60 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jaricom.c */,
+                            FFB59750D2F04A9BA707985F /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapimin.c */,
+                            A59B64BCC5964E578814B7CE /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcapistd.c */,
+                            A072D3DB320644B1A7245FF5 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcarith.c */,
+                            C205F56568E94C0A87E6A50A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccoefct.c */,
+                            BE4A2FF7F8BB4BF193022960 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jccolor.c */,
+                            1E548ED438CB4103A00C4192 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcdctmgr.c */,
+                            320DEA803FA842A89B5DA0A8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jchuff.c */,
+                            BEB08BD56F31474987F6FA56 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcinit.c */,
+                            38B7E2C138D04BA6B77B2892 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmainct.c */,
+                            47FD18C564D647B1B32BB7B2 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmarker.c */,
+                            03D76A993EC24FC0BB605334 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcmaster.c */,
+                            AACE56868D694F8A8A40CC5A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcomapi.c */,
+                            37AEA5095EFD4136B1290678 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcparam.c */,
+                            607EF780647D4F998705DE67 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcprepct.c */,
+                            37CD2D7F4046414AB034354C /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jcsample.c */,
+                            EEA6FD6B819C409C9474AF16 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jctrans.c */,
+                            31ED80F7DA15412EABD83F52 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapimin.c */,
+                            B7E5D42458AA4FF5887FAE4A /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdapistd.c */,
+                            53E79B039F554C1CA3ED6EB6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdarith.c */,
+                            6D267EA7313B423CA1662619 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatadst.c */,
+                            A8314499C4FA41BD8EA33436 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdatasrc.c */,
+                            9EA45DA08E7D4585B638D2A1 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcoefct.c */,
+                            B4E0B39DFEB34889AA65EF76 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdcolor.c */,
+                            8677D2B00D3A44ADA785E297 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jddctmgr.c */,
+                            32E6A7DF681F41A9ABC84CC6 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdhuff.c */,
+                            45EE0A3A5D56426D8EDD1FAA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdinput.c */,
+                            B989B72FD90F4F4BAC02CF50 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmainct.c */,
+                            B45DA54EF60A4E5AA7B4B862 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmarker.c */,
+                            65183A11C0FC4C9F9B3873E8 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmaster.c */,
+                            01AB32F06AC34804BEBF2FE3 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdmerge.c */,
+                            DB35FB4B1EBD47FF9379AF58 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdpostct.c */,
+                            CE36BA393EC54B5E97D490B2 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdsample.c */,
+                            7AF84F8246D74F44825E8DF2 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jdtrans.c */,
+                            45F9C4E4E14D42FF81DA0D17 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jerror.c */,
+                            05761057CB684CFAAE70B902 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctflt.c */,
+                            5415FBD36621404EA5861461 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctfst.c */,
+                            5FA053D72D994E49B3C45160 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jfdctint.c */,
+                            2D4C1B5F137140BC888A9E69 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctflt.c */,
+                            FB5743AABEBF410FB4EEBF81 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctfst.c */,
+                            68B6FB95EAB94745B4B1D539 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jidctint.c */,
+                            D2F817ECE3B0434BA71C2405 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemmgr.c */,
+                            B1E50DBCFD9244008548467E /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jmemnobs.c */,
+                            32636FD312E94801A99A382B /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant1.c */,
+                            FEC1612D96304D89ADAD24EA /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jquant2.c */,
+                            346FF366B96A47A88FA3EC73 /* /Users/christian/GIT/opencv/3rdparty/libjpeg/jutils.c */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              B2745921B6E6493B886F508E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = CED61CCA5335444F9E2C8A83 /* libjpeg */;
+                     targetProxy = 7B4135D396204333A571294D /* PBXContainerItemProxy */;
+              };
+              A418231BCDB2473D80FB9129 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = ACD9E197A47545968A651774 /* ZERO_CHECK */;
+                     targetProxy = 4C48E0778B0E40E1971D7E16 /* PBXContainerItemProxy */;
+              };
+              E33F694B152D478DA3AE2AF3 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 73F467FA0EB34214A26154A8 /* ALL_BUILD */;
+                     targetProxy = 34B2F4726FEE4483A17ED939 /* PBXContainerItemProxy */;
+              };
+              8F160D88F4444AA2A45082C2 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = ACD9E197A47545968A651774 /* ZERO_CHECK */;
+                     targetProxy = 357C9B6D72624C33B4F8ECF2 /* PBXContainerItemProxy */;
+              };
+              8C516765A06F4C1FB2F147CA /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 73F467FA0EB34214A26154A8 /* ALL_BUILD */;
+                     targetProxy = BE89ECDD34144553BBAE7852 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              AF894AD608D34F56B390EB5B /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/build";
+                     };
+                     name = Debug;
+              };
+              71F580F5110E424A9BDA5A73 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg/build";
+                     };
+                     name = Release;
+              };
+              FDD16F17C7DC48299635021D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              21A87E19D1B54EEEB813D769 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              16CFB01259254302842C825E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              7C38BFCEC5D044A9B36DB0BC /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B649D4A34D6B4C65B1FE3D24 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              E45288D53709486397380C3E /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              557DDEDBF6DC4340A070151A /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC         -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              737504FECCB84DE68A24F36C /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC   -fPIC     -DNDEBUG  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = libjpeg;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              D78B83C0929D42FFA41B604E /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              D6541C911AB64F86BF2B174F /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/3rdparty/libjpeg, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/3rdparty/libjpeg";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              1993728E3F324E0399C22AE3 /* Build configuration list for PBXProject  "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            AF894AD608D34F56B390EB5B /* Debug */,
+                            71F580F5110E424A9BDA5A73 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              F448E96432C34E59861E199F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            FDD16F17C7DC48299635021D /* Debug */,
+                            21A87E19D1B54EEEB813D769 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              2EAF7CC3DE58402DA4AFFF14 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            16CFB01259254302842C825E /* Debug */,
+                            7C38BFCEC5D044A9B36DB0BC /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D72EDDF901D94587AAAF50ED /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B649D4A34D6B4C65B1FE3D24 /* Debug */,
+                            E45288D53709486397380C3E /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              CC2033738E324898A7A2331D /* Build configuration list for PBXNativeTarget "libjpeg" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            557DDEDBF6DC4340A070151A /* Debug */,
+                            737504FECCB84DE68A24F36C /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              A7E7F6C9CBF94D419EB72D03 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            D78B83C0929D42FFA41B604E /* Debug */,
+                            D6541C911AB64F86BF2B174F /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 2D944DC7C9994266BF87FCA4;
+}

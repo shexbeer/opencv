@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              91408C1CF0874B45B2735F09 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 7343D70F7E1C4D94863F3101 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            31EB0AAD756744A0A20C7B59 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            D41E3A1DF9B74B698FD2AB0B /* PBXTargetDependency */,
+                            ECB698EB39FF480EAB285810 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              4992A63228A64FDCB2A8DB91 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 963921A00CBD4470AF91BBCA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            D27072F660E74E159B9160AC /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              B39C5815485341AB8EB01E3D /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 1F6F6BBFE3CF46A58CA08FB0 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            3931163BCA8D44039092A238 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            3C27147D1E9E498BBF38FE1D /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              EC8A67F6D51443AA8EF016E6 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = D894094D8BF5467DB78D2A96 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            D1EB0677764249118754DC1E /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            46FD66A263AB4BD1AA6E7E58 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+A829C6738234491E8AAA219D /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 4F7F1406B0024D639C915670 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+B15FE48359944D38A33650A6 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = CB720B7A06C04212AF01A3A5 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+125145A100AA484EA5D2C900 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 17ECCE5ED327402390794B73 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+3CBE5B8B7D6C4C21904CFFD4 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = B8789F2E343747A4B59DB815 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+D9B15D3C17904E448CC74562 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 0EAE3384C2B94195913E121E /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+9F56B2FE6DA649C5A18044DD /* /Users/christian/GIT/opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B488E209A8F941BD8EF6C965 /* /Users/christian/GIT/opencv/modules/stitching/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+DD263012C87D45D5B85514DC /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching.hpp */ = {isa = PBXBuildFile; fileRef = F3C7E77CEF6C46679269BDE7 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+BBE641D41666402FAB45FD9D /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */ = {isa = PBXBuildFile; fileRef = 000989F6F3E54CA19FDF0B4F /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+A1AB6490545A44DEA6921395 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */ = {isa = PBXBuildFile; fileRef = 8F5A700BC35542D0B4711A8F /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+4C825C764FE7489E99CAD3D6 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */ = {isa = PBXBuildFile; fileRef = DC77D5071C7B44DC963F8F9E /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+41A015F300364E4D81D7AEE1 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */ = {isa = PBXBuildFile; fileRef = 9BE3B7ACA98A46B5985022F4 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+B52131AFCE9D4D9484B3B66B /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */ = {isa = PBXBuildFile; fileRef = 5DF573EC4B244E32B3E73FDB /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+A3B3C720F9AF4CA89918A366 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */ = {isa = PBXBuildFile; fileRef = 6006E90C5C82469BB2F5D0AE /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+51243A8297DF41A6986A48B4 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */ = {isa = PBXBuildFile; fileRef = 7FD443E8C55E4D6FB4B7D042 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+D16CDAE62E944B988FA9A040 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */ = {isa = PBXBuildFile; fileRef = A051F5FDF1BD4369B1D9874E /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+ACCB172B71C74E9F8F059A9D /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */ = {isa = PBXBuildFile; fileRef = DE30292E53FB488794B0AF40 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+BD23C6F0285243948CE87758 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */ = {isa = PBXBuildFile; fileRef = 94F886C9AD8E41F2BFF0448D /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+2C0144B927D7486591FBE367 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */ = {isa = PBXBuildFile; fileRef = 780A037685AD4747BAD95F78 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+0214741AEE3B42F8A2495701 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */ = {isa = PBXBuildFile; fileRef = 81A188DAC8B44AF3821E17E8 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+3E50C7B41B1348039C40B3DA /* /Users/christian/GIT/opencv/modules/stitching/src/autocalib.cpp */ = {isa = PBXBuildFile; fileRef = 0E04412CC1894ACFA95EEEE7 /* /Users/christian/GIT/opencv/modules/stitching/src/autocalib.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2A4F044EF4B64D92B443DE73 /* /Users/christian/GIT/opencv/modules/stitching/src/blenders.cpp */ = {isa = PBXBuildFile; fileRef = 5EC81EAADC85485C8FEF9CE6 /* /Users/christian/GIT/opencv/modules/stitching/src/blenders.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4FDA463ADD8F4E29ADEE1E5D /* /Users/christian/GIT/opencv/modules/stitching/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = 7F051AC7E9234FEE8753DB53 /* /Users/christian/GIT/opencv/modules/stitching/src/camera.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A7B246EA35B74BBB9A6B734A /* /Users/christian/GIT/opencv/modules/stitching/src/exposure_compensate.cpp */ = {isa = PBXBuildFile; fileRef = 35DD7D1CD2594FDB87EEC8C6 /* /Users/christian/GIT/opencv/modules/stitching/src/exposure_compensate.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+544A48BA23CE4BB8B4228CA1 /* /Users/christian/GIT/opencv/modules/stitching/src/matchers.cpp */ = {isa = PBXBuildFile; fileRef = 706CAA5884DC4CD1BE7ECE78 /* /Users/christian/GIT/opencv/modules/stitching/src/matchers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+0D89FE30BAF44C62B0B1FDCC /* /Users/christian/GIT/opencv/modules/stitching/src/motion_estimators.cpp */ = {isa = PBXBuildFile; fileRef = 04F4B1FB553049199FB99585 /* /Users/christian/GIT/opencv/modules/stitching/src/motion_estimators.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6068E83F41AA422891E71910 /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/multibandblend.cl */ = {isa = PBXBuildFile; fileRef = 5FBD794EF30A428382D80B82 /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/multibandblend.cl */; settings = { COMPILER_FLAGS = ""; }; };
+4A86A62EDC4440339F654061 /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/warpers.cl */ = {isa = PBXBuildFile; fileRef = 2C207489BD044F8EB81C0EBC /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/warpers.cl */; settings = { COMPILER_FLAGS = ""; }; };
+1D7C1F6BB12F4FFCB57D1498 /* /Users/christian/GIT/opencv/modules/stitching/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = BFB9972CDA3E47DB9B7CC65A /* /Users/christian/GIT/opencv/modules/stitching/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+62FF99FE21AE496C97D9E1FB /* /Users/christian/GIT/opencv/modules/stitching/src/seam_finders.cpp */ = {isa = PBXBuildFile; fileRef = 158AC749EC134712BE977B23 /* /Users/christian/GIT/opencv/modules/stitching/src/seam_finders.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+73624951952849AE87B5B1D7 /* /Users/christian/GIT/opencv/modules/stitching/src/stitcher.cpp */ = {isa = PBXBuildFile; fileRef = AC63C529D2D64CA69618F7A2 /* /Users/christian/GIT/opencv/modules/stitching/src/stitcher.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+56496C1D826C4289A7C752C1 /* /Users/christian/GIT/opencv/modules/stitching/src/util.cpp */ = {isa = PBXBuildFile; fileRef = C99C1D16B2B14658B49279B9 /* /Users/christian/GIT/opencv/modules/stitching/src/util.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1BE7B60C11B4431489D5E1BB /* /Users/christian/GIT/opencv/modules/stitching/src/warpers.cpp */ = {isa = PBXBuildFile; fileRef = D23511B578234B77B11E4C8B /* /Users/christian/GIT/opencv/modules/stitching/src/warpers.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              7148BA28FCEE4E178AC420DB /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              C9E358691545437AB363096F /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              8D087F2476434AD9989BC169 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              B6AE65AC5F0E46F8B08A7F39 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6CEDAAE949C54CE9B1DA8E43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 4992A63228A64FDCB2A8DB91;
+                     remoteInfo = ZERO_CHECK;
+              };
+              9C30F79808F642E881B46963 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6CEDAAE949C54CE9B1DA8E43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = D704EB0F7A54475C9E3FD8C9;
+                     remoteInfo = opencv_stitching;
+              };
+              8505B8C7D4A34DF892AFB59C /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6CEDAAE949C54CE9B1DA8E43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 91408C1CF0874B45B2735F09;
+                     remoteInfo = ALL_BUILD;
+              };
+              C18F5E2E051343E5B9AC0707 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6CEDAAE949C54CE9B1DA8E43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 4992A63228A64FDCB2A8DB91;
+                     remoteInfo = ZERO_CHECK;
+              };
+              416E160255CA458AA703F070 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 6CEDAAE949C54CE9B1DA8E43 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 91408C1CF0874B45B2735F09;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+B488E209A8F941BD8EF6C965 /* /Users/christian/GIT/opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+4F7F1406B0024D639C915670 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../ios/build/iPhoneSimulator-x86_64/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+CB720B7A06C04212AF01A3A5 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+17ECCE5ED327402390794B73 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+B8789F2E343747A4B59DB815 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+0EAE3384C2B94195913E121E /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+F3C7E77CEF6C46679269BDE7 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "stitching.hpp"; path = "include/opencv2/stitching.hpp"; sourceTree = SOURCE_ROOT; };
+000989F6F3E54CA19FDF0B4F /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "autocalib.hpp"; path = "include/opencv2/stitching/detail/autocalib.hpp"; sourceTree = SOURCE_ROOT; };
+8F5A700BC35542D0B4711A8F /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "blenders.hpp"; path = "include/opencv2/stitching/detail/blenders.hpp"; sourceTree = SOURCE_ROOT; };
+DC77D5071C7B44DC963F8F9E /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "camera.hpp"; path = "include/opencv2/stitching/detail/camera.hpp"; sourceTree = SOURCE_ROOT; };
+9BE3B7ACA98A46B5985022F4 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "exposure_compensate.hpp"; path = "include/opencv2/stitching/detail/exposure_compensate.hpp"; sourceTree = SOURCE_ROOT; };
+5DF573EC4B244E32B3E73FDB /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "matchers.hpp"; path = "include/opencv2/stitching/detail/matchers.hpp"; sourceTree = SOURCE_ROOT; };
+6006E90C5C82469BB2F5D0AE /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "motion_estimators.hpp"; path = "include/opencv2/stitching/detail/motion_estimators.hpp"; sourceTree = SOURCE_ROOT; };
+7FD443E8C55E4D6FB4B7D042 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "seam_finders.hpp"; path = "include/opencv2/stitching/detail/seam_finders.hpp"; sourceTree = SOURCE_ROOT; };
+A051F5FDF1BD4369B1D9874E /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "util.hpp"; path = "include/opencv2/stitching/detail/util.hpp"; sourceTree = SOURCE_ROOT; };
+DE30292E53FB488794B0AF40 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "util_inl.hpp"; path = "include/opencv2/stitching/detail/util_inl.hpp"; sourceTree = SOURCE_ROOT; };
+94F886C9AD8E41F2BFF0448D /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "warpers.hpp"; path = "include/opencv2/stitching/detail/warpers.hpp"; sourceTree = SOURCE_ROOT; };
+780A037685AD4747BAD95F78 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "warpers_inl.hpp"; path = "include/opencv2/stitching/detail/warpers_inl.hpp"; sourceTree = SOURCE_ROOT; };
+81A188DAC8B44AF3821E17E8 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "warpers.hpp"; path = "include/opencv2/stitching/warpers.hpp"; sourceTree = SOURCE_ROOT; };
+0E04412CC1894ACFA95EEEE7 /* /Users/christian/GIT/opencv/modules/stitching/src/autocalib.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "autocalib.cpp"; path = "src/autocalib.cpp"; sourceTree = SOURCE_ROOT; };
+5EC81EAADC85485C8FEF9CE6 /* /Users/christian/GIT/opencv/modules/stitching/src/blenders.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "blenders.cpp"; path = "src/blenders.cpp"; sourceTree = SOURCE_ROOT; };
+7F051AC7E9234FEE8753DB53 /* /Users/christian/GIT/opencv/modules/stitching/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camera.cpp"; path = "src/camera.cpp"; sourceTree = SOURCE_ROOT; };
+35DD7D1CD2594FDB87EEC8C6 /* /Users/christian/GIT/opencv/modules/stitching/src/exposure_compensate.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "exposure_compensate.cpp"; path = "src/exposure_compensate.cpp"; sourceTree = SOURCE_ROOT; };
+706CAA5884DC4CD1BE7ECE78 /* /Users/christian/GIT/opencv/modules/stitching/src/matchers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "matchers.cpp"; path = "src/matchers.cpp"; sourceTree = SOURCE_ROOT; };
+04F4B1FB553049199FB99585 /* /Users/christian/GIT/opencv/modules/stitching/src/motion_estimators.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "motion_estimators.cpp"; path = "src/motion_estimators.cpp"; sourceTree = SOURCE_ROOT; };
+5FBD794EF30A428382D80B82 /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/multibandblend.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "multibandblend.cl"; path = "src/opencl/multibandblend.cl"; sourceTree = SOURCE_ROOT; };
+2C207489BD044F8EB81C0EBC /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/warpers.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "warpers.cl"; path = "src/opencl/warpers.cl"; sourceTree = SOURCE_ROOT; };
+BFB9972CDA3E47DB9B7CC65A /* /Users/christian/GIT/opencv/modules/stitching/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+158AC749EC134712BE977B23 /* /Users/christian/GIT/opencv/modules/stitching/src/seam_finders.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "seam_finders.cpp"; path = "src/seam_finders.cpp"; sourceTree = SOURCE_ROOT; };
+AC63C529D2D64CA69618F7A2 /* /Users/christian/GIT/opencv/modules/stitching/src/stitcher.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stitcher.cpp"; path = "src/stitcher.cpp"; sourceTree = SOURCE_ROOT; };
+C99C1D16B2B14658B49279B9 /* /Users/christian/GIT/opencv/modules/stitching/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "util.cpp"; path = "src/util.cpp"; sourceTree = SOURCE_ROOT; };
+D23511B578234B77B11E4C8B /* /Users/christian/GIT/opencv/modules/stitching/src/warpers.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "warpers.cpp"; path = "src/warpers.cpp"; sourceTree = SOURCE_ROOT; };
+8B08750D70154B46B3955624 /* opencv_stitching */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_stitching.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              E12C006E800940418A8994B0  = {
+                     isa = PBXGroup;
+                     children = (
+                            90FBA09BBDF041BEAB70DFE2 /* Sources */,
+                            824FF92C042C421B9039CFB4 /* Resources */,
+                            DE8648CD839C4AA683A73C41 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              90FBA09BBDF041BEAB70DFE2 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            009F96AC0E1A45B3829E094D /* ALL_BUILD */,
+                            583334C289E3407F9D7E47D1 /* ZERO_CHECK */,
+                            B53268EC98D541D58B59FD0E /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              824FF92C042C421B9039CFB4 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              009F96AC0E1A45B3829E094D /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CB14BC2715DE4714BC3AC865 /* CMake Rules */,
+                            B488E209A8F941BD8EF6C965 /* /Users/christian/GIT/opencv/modules/stitching/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              CB14BC2715DE4714BC3AC865 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              583334C289E3407F9D7E47D1 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B82225CF2C8040828A389810 /* CMake Rules */,
+                            B488E209A8F941BD8EF6C965 /* /Users/christian/GIT/opencv/modules/stitching/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              B82225CF2C8040828A389810 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              B53268EC98D541D58B59FD0E /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            731CA6FCEC0A4D58A9B66FE1 /* opencv_stitching */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              731CA6FCEC0A4D58A9B66FE1 /* opencv_stitching */ = {
+                     isa = PBXGroup;
+                     children = (
+                            08DCEE4CD92A4FA3BB250091 /* Include */,
+                            3DA556E1F0754A7FABA5C1BB /* Src */,
+                            DE00F513C101437B91331B87 /* Header Files */,
+                            D96DBD55924E49C695B0479A /* CMake Rules */,
+                            B488E209A8F941BD8EF6C965 /* /Users/christian/GIT/opencv/modules/stitching/CMakeLists.txt */,
+                     );
+                     name = opencv_stitching;
+                     sourceTree = "<group>";
+              };
+              08DCEE4CD92A4FA3BB250091 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            34B5942C4D5B412FBA9DD6FD /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              34B5942C4D5B412FBA9DD6FD /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9E8ECC081190490990ED0DEC /* stitching */,
+                            F3C7E77CEF6C46679269BDE7 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              9E8ECC081190490990ED0DEC /* stitching */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E2DC2216D905483782ADBBC2 /* detail */,
+                            81A188DAC8B44AF3821E17E8 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */,
+                     );
+                     name = stitching;
+                     sourceTree = "<group>";
+              };
+              E2DC2216D905483782ADBBC2 /* detail */ = {
+                     isa = PBXGroup;
+                     children = (
+                            000989F6F3E54CA19FDF0B4F /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */,
+                            8F5A700BC35542D0B4711A8F /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */,
+                            DC77D5071C7B44DC963F8F9E /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */,
+                            9BE3B7ACA98A46B5985022F4 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */,
+                            5DF573EC4B244E32B3E73FDB /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */,
+                            6006E90C5C82469BB2F5D0AE /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */,
+                            7FD443E8C55E4D6FB4B7D042 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */,
+                            A051F5FDF1BD4369B1D9874E /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */,
+                            DE30292E53FB488794B0AF40 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */,
+                            94F886C9AD8E41F2BFF0448D /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */,
+                            780A037685AD4747BAD95F78 /* /Users/christian/GIT/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */,
+                     );
+                     name = detail;
+                     sourceTree = "<group>";
+              };
+              3DA556E1F0754A7FABA5C1BB /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            2096D6479B5F49EAA561E22D /* opencl */,
+                            0E04412CC1894ACFA95EEEE7 /* /Users/christian/GIT/opencv/modules/stitching/src/autocalib.cpp */,
+                            5EC81EAADC85485C8FEF9CE6 /* /Users/christian/GIT/opencv/modules/stitching/src/blenders.cpp */,
+                            7F051AC7E9234FEE8753DB53 /* /Users/christian/GIT/opencv/modules/stitching/src/camera.cpp */,
+                            35DD7D1CD2594FDB87EEC8C6 /* /Users/christian/GIT/opencv/modules/stitching/src/exposure_compensate.cpp */,
+                            706CAA5884DC4CD1BE7ECE78 /* /Users/christian/GIT/opencv/modules/stitching/src/matchers.cpp */,
+                            04F4B1FB553049199FB99585 /* /Users/christian/GIT/opencv/modules/stitching/src/motion_estimators.cpp */,
+                            BFB9972CDA3E47DB9B7CC65A /* /Users/christian/GIT/opencv/modules/stitching/src/precomp.hpp */,
+                            158AC749EC134712BE977B23 /* /Users/christian/GIT/opencv/modules/stitching/src/seam_finders.cpp */,
+                            AC63C529D2D64CA69618F7A2 /* /Users/christian/GIT/opencv/modules/stitching/src/stitcher.cpp */,
+                            C99C1D16B2B14658B49279B9 /* /Users/christian/GIT/opencv/modules/stitching/src/util.cpp */,
+                            D23511B578234B77B11E4C8B /* /Users/christian/GIT/opencv/modules/stitching/src/warpers.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              2096D6479B5F49EAA561E22D /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            73692E8AFDD7473090046F64 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              73692E8AFDD7473090046F64 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F8A2A63C711F45C3BEF63947 /* autogenerated */,
+                            5FBD794EF30A428382D80B82 /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/multibandblend.cl */,
+                            2C207489BD044F8EB81C0EBC /* /Users/christian/GIT/opencv/modules/stitching/src/opencl/warpers.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              F8A2A63C711F45C3BEF63947 /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            CB720B7A06C04212AF01A3A5 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp */,
+                            B8789F2E343747A4B59DB815 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              DE00F513C101437B91331B87 /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4F7F1406B0024D639C915670 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/cvconfig.h */,
+                            0EAE3384C2B94195913E121E /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              D96DBD55924E49C695B0479A /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            17ECCE5ED327402390794B73 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              DE8648CD839C4AA683A73C41 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8B08750D70154B46B3955624 /* opencv_stitching */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              D704EB0F7A54475C9E3FD8C9 /* opencv_stitching */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 93C14BCC564A42C7ABA136FD /* Build configuration list for PBXNativeTarget "opencv_stitching" */;
+                     buildPhases = (
+                            40C9E4546CCB488587F9F92F /* CMake Rules */,
+                            7836860E650D4A1EB0B04A28 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            4E2DE9AAD72B40F3A6539464 /* PBXTargetDependency */,
+                     );
+                     name = opencv_stitching;
+                     productName = opencv_stitching;
+                     productReference = 8B08750D70154B46B3955624 /* opencv_stitching */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              6CEDAAE949C54CE9B1DA8E43 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 884C0F6BCC0D4A0AADBE6B76 /* Build configuration list for PBXProject  "opencv_stitching" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            C9E358691545437AB363096F /* Debug */,
+                            8D087F2476434AD9989BC169 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = E12C006E800940418A8994B0;
+                     projectDirPath = "../../../../../modules/stitching";
+                     projectRoot = "";
+                     targets = (
+                            91408C1CF0874B45B2735F09 /* ALL_BUILD */,
+                            4992A63228A64FDCB2A8DB91 /* ZERO_CHECK */,
+                            B39C5815485341AB8EB01E3D /* install */,
+                            D704EB0F7A54475C9E3FD8C9 /* opencv_stitching */,
+                            EC8A67F6D51443AA8EF016E6 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              A552C77FCAE64B99B0D5DA8D /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              31EB0AAD756744A0A20C7B59 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching -f /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              576D09279A904246B7042936 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D27072F660E74E159B9160AC /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching -f /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              AD1E4B6BE8DB4A30A487096D /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              3931163BCA8D44039092A238 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching -f /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              40C9E4546CCB488587F9F92F /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching -f /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/CMakeScripts/opencv_stitching_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              20F889AEE40941D99B7F0604 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D1EB0677764249118754DC1E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching -f /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              7836860E650D4A1EB0B04A28 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            B15FE48359944D38A33650A6 /* /Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/opencl_kernels.cpp */,
+                            3E50C7B41B1348039C40B3DA /* /Users/christian/GIT/opencv/modules/stitching/src/autocalib.cpp */,
+                            2A4F044EF4B64D92B443DE73 /* /Users/christian/GIT/opencv/modules/stitching/src/blenders.cpp */,
+                            4FDA463ADD8F4E29ADEE1E5D /* /Users/christian/GIT/opencv/modules/stitching/src/camera.cpp */,
+                            A7B246EA35B74BBB9A6B734A /* /Users/christian/GIT/opencv/modules/stitching/src/exposure_compensate.cpp */,
+                            544A48BA23CE4BB8B4228CA1 /* /Users/christian/GIT/opencv/modules/stitching/src/matchers.cpp */,
+                            0D89FE30BAF44C62B0B1FDCC /* /Users/christian/GIT/opencv/modules/stitching/src/motion_estimators.cpp */,
+                            62FF99FE21AE496C97D9E1FB /* /Users/christian/GIT/opencv/modules/stitching/src/seam_finders.cpp */,
+                            73624951952849AE87B5B1D7 /* /Users/christian/GIT/opencv/modules/stitching/src/stitcher.cpp */,
+                            56496C1D826C4289A7C752C1 /* /Users/christian/GIT/opencv/modules/stitching/src/util.cpp */,
+                            1BE7B60C11B4431489D5E1BB /* /Users/christian/GIT/opencv/modules/stitching/src/warpers.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              D41E3A1DF9B74B698FD2AB0B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 4992A63228A64FDCB2A8DB91 /* ZERO_CHECK */;
+                     targetProxy = B6AE65AC5F0E46F8B08A7F39 /* PBXContainerItemProxy */;
+              };
+              ECB698EB39FF480EAB285810 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = D704EB0F7A54475C9E3FD8C9 /* opencv_stitching */;
+                     targetProxy = 9C30F79808F642E881B46963 /* PBXContainerItemProxy */;
+              };
+              3C27147D1E9E498BBF38FE1D /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 91408C1CF0874B45B2735F09 /* ALL_BUILD */;
+                     targetProxy = 8505B8C7D4A34DF892AFB59C /* PBXContainerItemProxy */;
+              };
+              4E2DE9AAD72B40F3A6539464 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 4992A63228A64FDCB2A8DB91 /* ZERO_CHECK */;
+                     targetProxy = C18F5E2E051343E5B9AC0707 /* PBXContainerItemProxy */;
+              };
+              46FD66A263AB4BD1AA6E7E58 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 91408C1CF0874B45B2735F09 /* ALL_BUILD */;
+                     targetProxy = 416E160255CA458AA703F070 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              3BDD26C31FD146F3982F74E6 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/build";
+                     };
+                     name = Debug;
+              };
+              1782A856CC2F4A0B93773DF3 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching/build";
+                     };
+                     name = Release;
+              };
+              925D85B47FC64B9EA8B2F27D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              AA56DA421B0C4402A8C7D95A /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9CC54CE0241346EFB6B8F2F0 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              2577FF85C7CF49848D55511B /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              E2AEF71FB02C4CFF92C2B5D7 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              1B0A9DAD00D240FAB43CB9B4 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              DC3A62E91A534C6086C83090 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_stitching;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              36B4DF714B1F4869B7AE6DF8 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_stitching;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              EE2CED855B9E4BEDACF3B34D /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8C5C0FEAD6F9426586149C9F /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/objdetect/include, /Users/christian/GIT/opencv/modules/nonfree/include, /Users/christian/GIT/opencv/modules/ml/include, /Users/christian/GIT/opencv/modules/calib3d/include, /Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching", /Users/christian/GIT/opencv/modules/stitching/src, /Users/christian/GIT/opencv/modules/stitching/include, "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneSimulator-x86_64/modules/stitching";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              884C0F6BCC0D4A0AADBE6B76 /* Build configuration list for PBXProject  "opencv_stitching" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            3BDD26C31FD146F3982F74E6 /* Debug */,
+                            1782A856CC2F4A0B93773DF3 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7343D70F7E1C4D94863F3101 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            925D85B47FC64B9EA8B2F27D /* Debug */,
+                            AA56DA421B0C4402A8C7D95A /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              963921A00CBD4470AF91BBCA /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            9CC54CE0241346EFB6B8F2F0 /* Debug */,
+                            2577FF85C7CF49848D55511B /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              1F6F6BBFE3CF46A58CA08FB0 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E2AEF71FB02C4CFF92C2B5D7 /* Debug */,
+                            1B0A9DAD00D240FAB43CB9B4 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              93C14BCC564A42C7ABA136FD /* Build configuration list for PBXNativeTarget "opencv_stitching" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            DC3A62E91A534C6086C83090 /* Debug */,
+                            36B4DF714B1F4869B7AE6DF8 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              D894094D8BF5467DB78D2A96 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            EE2CED855B9E4BEDACF3B34D /* Debug */,
+                            8C5C0FEAD6F9426586149C9F /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 6CEDAAE949C54CE9B1DA8E43;
+}

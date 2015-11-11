@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              05873E83D92B441B91672B6F /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 5F1394B7570E443FA730F9BD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            A163B7CEB13742A39650A972 /* CMake Rules */,
+                     );
+                     dependencies = (
+                            014191168A7B45A99A6D7A7B /* PBXTargetDependency */,
+                            EDB6C553872D427D993A104A /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              F04AD079B77D48C781907D1F /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = CCA44D02646F4F48AD545E29 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            67A0C089D3F34315B8765FA5 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              9EE669886832482887AFEED6 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 79EC74ED59F34C1999B7E152 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            9AE55CD0677C41F9B796C241 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            AF346CEDB9124C328C4C67BA /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              8260EA4A250A4089841196BD /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 7E3A32CB613840CABC7A3503 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            AF0CA9CD2FC545EABB41298E /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            59124F9FDB444E44854E8313 /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+004F400DDEBC488D9668798A /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 8A57D426604C49CFBD134162 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+4E95B7B34F3344A5A2C5E624 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = F91C34D59CCE410B97138BBE /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+4987D2EBD15F46C8A4935B8F /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = E9467BACC04B48C2907D892B /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+50EA13458F584329A2B10245 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = C0B43F172261473BB07A9463 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+3E1F6FBFDD6D4571A37C84F9 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 5850F716E8734E4FB3EA1615 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+63DF0F11EA704BFE88454BCF /* /Users/christian/GIT/opencv/modules/video/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = EBF192D217FD480EBF45FB95 /* /Users/christian/GIT/opencv/modules/video/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+57231271E0744153A5126224 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video.hpp */ = {isa = PBXBuildFile; fileRef = 36E812A0BA8A4421AD7072C4 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+301C46BD41F540CAADCC3915 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/background_segm.hpp */ = {isa = PBXBuildFile; fileRef = 0EBD3445F248433A88EC228B /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/background_segm.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+F6C03645C01B42889E2C0E12 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking.hpp */ = {isa = PBXBuildFile; fileRef = 355B7D342D764FE78A0B005E /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+7338B0943BA949D180BCB1A5 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking_c.h */ = {isa = PBXBuildFile; fileRef = 08791200A26C49739A0A94DD /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+39057F4ED9D94EA0B6307AB9 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/video.hpp */ = {isa = PBXBuildFile; fileRef = BCC8560514EB4D8287F4D308 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/video.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+7A84E389AD474B79A4D45BD5 /* /Users/christian/GIT/opencv/modules/video/src/affineflow.cpp */ = {isa = PBXBuildFile; fileRef = 9749B51E414544B7B6708A9C /* /Users/christian/GIT/opencv/modules/video/src/affineflow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6B0F9548D6734C6C9D4C5D60 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_KNN.cpp */ = {isa = PBXBuildFile; fileRef = D2A085D387D34B10BCB38BD3 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_KNN.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+03D394CE339C44D4BF37B34B /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix.cpp */ = {isa = PBXBuildFile; fileRef = 0351EFF823834D9E8893213D /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+317FF087BF6F42A4BF44187B /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix2.cpp */ = {isa = PBXBuildFile; fileRef = D17D7A11D24346EB9889C9C8 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix2.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3C47DD61693F49708E7513D5 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gmg.cpp */ = {isa = PBXBuildFile; fileRef = A9B04CBD313C46279D1FBE0C /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gmg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+5A15665116544D809A4B67FB /* /Users/christian/GIT/opencv/modules/video/src/camshift.cpp */ = {isa = PBXBuildFile; fileRef = A0C2CE9D667E445A93EF094B /* /Users/christian/GIT/opencv/modules/video/src/camshift.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+38479A4816E7406483C060F5 /* /Users/christian/GIT/opencv/modules/video/src/compat_video.cpp */ = {isa = PBXBuildFile; fileRef = BE29FBCA3ADB46BE87BF2DB2 /* /Users/christian/GIT/opencv/modules/video/src/compat_video.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+E2FF8B102E1C43D792ADACAA /* /Users/christian/GIT/opencv/modules/video/src/ecc.cpp */ = {isa = PBXBuildFile; fileRef = C66448F568504A2F9128D359 /* /Users/christian/GIT/opencv/modules/video/src/ecc.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2951431B8DBB4D83B424E9C5 /* /Users/christian/GIT/opencv/modules/video/src/kalman.cpp */ = {isa = PBXBuildFile; fileRef = F9DB5FE7B9B54B5E856EF14E /* /Users/christian/GIT/opencv/modules/video/src/kalman.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6D47D767630547698A99B960 /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.cpp */ = {isa = PBXBuildFile; fileRef = 4C40C22029D3458B8FF39A2F /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+2A51AD3C6CEF498A84AECE08 /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.hpp */ = {isa = PBXBuildFile; fileRef = 3387F15DA9E747B08182B857 /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+66F491E1959B4311A8D9ED72 /* /Users/christian/GIT/opencv/modules/video/src/motempl.cpp */ = {isa = PBXBuildFile; fileRef = 09AF796261CE42119ED952B6 /* /Users/christian/GIT/opencv/modules/video/src/motempl.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+700742F7B7BF4124B7D1529B /* /Users/christian/GIT/opencv/modules/video/src/opencl/bgfg_mog2.cl */ = {isa = PBXBuildFile; fileRef = 5FB460F170B0497392379A92 /* /Users/christian/GIT/opencv/modules/video/src/opencl/bgfg_mog2.cl */; settings = { COMPILER_FLAGS = ""; }; };
+3D5D015351224FFEB67B5738 /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_farneback.cl */ = {isa = PBXBuildFile; fileRef = 629AD0E816EB458EA015476F /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_farneback.cl */; settings = { COMPILER_FLAGS = ""; }; };
+77CBCD7027534FB1BFE2BCF5 /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */ = {isa = PBXBuildFile; fileRef = DC8196B84E7B43BDAF91EE22 /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */; settings = { COMPILER_FLAGS = ""; }; };
+F5AD574653674536ACE1C4CC /* /Users/christian/GIT/opencv/modules/video/src/opencl/pyrlk.cl */ = {isa = PBXBuildFile; fileRef = F0093AC7A0F349E883522A19 /* /Users/christian/GIT/opencv/modules/video/src/opencl/pyrlk.cl */; settings = { COMPILER_FLAGS = ""; }; };
+5CC42C892D524A0BB338957A /* /Users/christian/GIT/opencv/modules/video/src/opencl/updatemotionhistory.cl */ = {isa = PBXBuildFile; fileRef = 9A4BF2DE844340949CF3D9B5 /* /Users/christian/GIT/opencv/modules/video/src/opencl/updatemotionhistory.cl */; settings = { COMPILER_FLAGS = ""; }; };
+F169F0CA69B34839A9F18F88 /* /Users/christian/GIT/opencv/modules/video/src/optflowgf.cpp */ = {isa = PBXBuildFile; fileRef = D7BFD875853447678F137DBA /* /Users/christian/GIT/opencv/modules/video/src/optflowgf.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+40428E0C10D6486D8453E2D1 /* /Users/christian/GIT/opencv/modules/video/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 6A596E44D127446F932BB247 /* /Users/christian/GIT/opencv/modules/video/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+69BD435BEFDD48A6B3A3449D /* /Users/christian/GIT/opencv/modules/video/src/simpleflow.cpp */ = {isa = PBXBuildFile; fileRef = C1DC125237CA468C8AFDA70B /* /Users/christian/GIT/opencv/modules/video/src/simpleflow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+FD9FBC6D63B64DDEACDCADBF /* /Users/christian/GIT/opencv/modules/video/src/tvl1flow.cpp */ = {isa = PBXBuildFile; fileRef = 0E02F01029F649CC80488309 /* /Users/christian/GIT/opencv/modules/video/src/tvl1flow.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+04079782F0F348F9A7BAF138 /* /Users/christian/GIT/opencv/modules/video/src/video_init.cpp */ = {isa = PBXBuildFile; fileRef = 97FBDDAD8BE5422E81E75DCA /* /Users/christian/GIT/opencv/modules/video/src/video_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              5C360F671CBC4EAEAEFA4380 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              45734C1A073242BF8B9CAFFE /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              C6CDC2A9A979455D90879CAF /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              7B547117767744CE9B62C9B7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F80AC3DEE11843FC9D7F2090 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F04AD079B77D48C781907D1F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              8E352877AD104FDB97F8443B /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F80AC3DEE11843FC9D7F2090 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 6A445089B0A44FB297E38D8A;
+                     remoteInfo = opencv_video;
+              };
+              191CBAA48D154B6B9C345B96 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F80AC3DEE11843FC9D7F2090 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 05873E83D92B441B91672B6F;
+                     remoteInfo = ALL_BUILD;
+              };
+              86B2C65C8865425F824AF59E /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F80AC3DEE11843FC9D7F2090 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F04AD079B77D48C781907D1F;
+                     remoteInfo = ZERO_CHECK;
+              };
+              C18D32D4314F4644A421EA3F /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = F80AC3DEE11843FC9D7F2090 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 05873E83D92B441B91672B6F;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+EBF192D217FD480EBF45FB95 /* /Users/christian/GIT/opencv/modules/video/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+8A57D426604C49CFBD134162 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../ios/build/iPhoneOS-armv7s/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+F91C34D59CCE410B97138BBE /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+E9467BACC04B48C2907D892B /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+C0B43F172261473BB07A9463 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+5850F716E8734E4FB3EA1615 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+36E812A0BA8A4421AD7072C4 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "video.hpp"; path = "include/opencv2/video.hpp"; sourceTree = SOURCE_ROOT; };
+0EBD3445F248433A88EC228B /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/background_segm.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "background_segm.hpp"; path = "include/opencv2/video/background_segm.hpp"; sourceTree = SOURCE_ROOT; };
+355B7D342D764FE78A0B005E /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "tracking.hpp"; path = "include/opencv2/video/tracking.hpp"; sourceTree = SOURCE_ROOT; };
+08791200A26C49739A0A94DD /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "tracking_c.h"; path = "include/opencv2/video/tracking_c.h"; sourceTree = SOURCE_ROOT; };
+BCC8560514EB4D8287F4D308 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/video.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "video.hpp"; path = "include/opencv2/video/video.hpp"; sourceTree = SOURCE_ROOT; };
+9749B51E414544B7B6708A9C /* /Users/christian/GIT/opencv/modules/video/src/affineflow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "affineflow.cpp"; path = "src/affineflow.cpp"; sourceTree = SOURCE_ROOT; };
+D2A085D387D34B10BCB38BD3 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_KNN.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_KNN.cpp"; path = "src/bgfg_KNN.cpp"; sourceTree = SOURCE_ROOT; };
+0351EFF823834D9E8893213D /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gaussmix.cpp"; path = "src/bgfg_gaussmix.cpp"; sourceTree = SOURCE_ROOT; };
+D17D7A11D24346EB9889C9C8 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix2.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gaussmix2.cpp"; path = "src/bgfg_gaussmix2.cpp"; sourceTree = SOURCE_ROOT; };
+A9B04CBD313C46279D1FBE0C /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gmg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "bgfg_gmg.cpp"; path = "src/bgfg_gmg.cpp"; sourceTree = SOURCE_ROOT; };
+A0C2CE9D667E445A93EF094B /* /Users/christian/GIT/opencv/modules/video/src/camshift.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "camshift.cpp"; path = "src/camshift.cpp"; sourceTree = SOURCE_ROOT; };
+BE29FBCA3ADB46BE87BF2DB2 /* /Users/christian/GIT/opencv/modules/video/src/compat_video.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_video.cpp"; path = "src/compat_video.cpp"; sourceTree = SOURCE_ROOT; };
+C66448F568504A2F9128D359 /* /Users/christian/GIT/opencv/modules/video/src/ecc.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ecc.cpp"; path = "src/ecc.cpp"; sourceTree = SOURCE_ROOT; };
+F9DB5FE7B9B54B5E856EF14E /* /Users/christian/GIT/opencv/modules/video/src/kalman.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "kalman.cpp"; path = "src/kalman.cpp"; sourceTree = SOURCE_ROOT; };
+4C40C22029D3458B8FF39A2F /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "lkpyramid.cpp"; path = "src/lkpyramid.cpp"; sourceTree = SOURCE_ROOT; };
+3387F15DA9E747B08182B857 /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "lkpyramid.hpp"; path = "src/lkpyramid.hpp"; sourceTree = SOURCE_ROOT; };
+09AF796261CE42119ED952B6 /* /Users/christian/GIT/opencv/modules/video/src/motempl.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "motempl.cpp"; path = "src/motempl.cpp"; sourceTree = SOURCE_ROOT; };
+5FB460F170B0497392379A92 /* /Users/christian/GIT/opencv/modules/video/src/opencl/bgfg_mog2.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "bgfg_mog2.cl"; path = "src/opencl/bgfg_mog2.cl"; sourceTree = SOURCE_ROOT; };
+629AD0E816EB458EA015476F /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_farneback.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "optical_flow_farneback.cl"; path = "src/opencl/optical_flow_farneback.cl"; sourceTree = SOURCE_ROOT; };
+DC8196B84E7B43BDAF91EE22 /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "optical_flow_tvl1.cl"; path = "src/opencl/optical_flow_tvl1.cl"; sourceTree = SOURCE_ROOT; };
+F0093AC7A0F349E883522A19 /* /Users/christian/GIT/opencv/modules/video/src/opencl/pyrlk.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "pyrlk.cl"; path = "src/opencl/pyrlk.cl"; sourceTree = SOURCE_ROOT; };
+9A4BF2DE844340949CF3D9B5 /* /Users/christian/GIT/opencv/modules/video/src/opencl/updatemotionhistory.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "updatemotionhistory.cl"; path = "src/opencl/updatemotionhistory.cl"; sourceTree = SOURCE_ROOT; };
+D7BFD875853447678F137DBA /* /Users/christian/GIT/opencv/modules/video/src/optflowgf.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "optflowgf.cpp"; path = "src/optflowgf.cpp"; sourceTree = SOURCE_ROOT; };
+6A596E44D127446F932BB247 /* /Users/christian/GIT/opencv/modules/video/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+C1DC125237CA468C8AFDA70B /* /Users/christian/GIT/opencv/modules/video/src/simpleflow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "simpleflow.cpp"; path = "src/simpleflow.cpp"; sourceTree = SOURCE_ROOT; };
+0E02F01029F649CC80488309 /* /Users/christian/GIT/opencv/modules/video/src/tvl1flow.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "tvl1flow.cpp"; path = "src/tvl1flow.cpp"; sourceTree = SOURCE_ROOT; };
+97FBDDAD8BE5422E81E75DCA /* /Users/christian/GIT/opencv/modules/video/src/video_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "video_init.cpp"; path = "src/video_init.cpp"; sourceTree = SOURCE_ROOT; };
+16F6770E4C1648F49EB3385B /* opencv_video */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_video.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              3164BFB8BC86496AB90F5023  = {
+                     isa = PBXGroup;
+                     children = (
+                            130EB60916BA45EBB9608646 /* Sources */,
+                            912ADA8A2EF0448990F0AB27 /* Resources */,
+                            06B195FF7CF84867A247C1FD /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              130EB60916BA45EBB9608646 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8D792A4A5DF64A67A5AA8906 /* ALL_BUILD */,
+                            83B3F1121C584A679E220765 /* ZERO_CHECK */,
+                            55FDD7A6783246B9A9C85FB2 /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              912ADA8A2EF0448990F0AB27 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              8D792A4A5DF64A67A5AA8906 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            3F09FDE56F8E4A5C8D9BE136 /* CMake Rules */,
+                            EBF192D217FD480EBF45FB95 /* /Users/christian/GIT/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              3F09FDE56F8E4A5C8D9BE136 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              83B3F1121C584A679E220765 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            207C1C0FD77A46F196AF298A /* CMake Rules */,
+                            EBF192D217FD480EBF45FB95 /* /Users/christian/GIT/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              207C1C0FD77A46F196AF298A /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              55FDD7A6783246B9A9C85FB2 /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            18F32EB5E6BA43F391F4E4D3 /* opencv_video */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              18F32EB5E6BA43F391F4E4D3 /* opencv_video */ = {
+                     isa = PBXGroup;
+                     children = (
+                            08B6FAA76C1A4BBE8B09FC1C /* Include */,
+                            F2CFA8B2DB574AB8A52A92E0 /* Src */,
+                            2C6CA8387B0849BF80F554DC /* Header Files */,
+                            83D19D5F8AE843D98C02E866 /* CMake Rules */,
+                            EBF192D217FD480EBF45FB95 /* /Users/christian/GIT/opencv/modules/video/CMakeLists.txt */,
+                     );
+                     name = opencv_video;
+                     sourceTree = "<group>";
+              };
+              08B6FAA76C1A4BBE8B09FC1C /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            35A2B53426194CD4B24ECDF8 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              35A2B53426194CD4B24ECDF8 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            A36F011B7FD9431CAB99B39B /* video */,
+                            36E812A0BA8A4421AD7072C4 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              A36F011B7FD9431CAB99B39B /* video */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0EBD3445F248433A88EC228B /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/background_segm.hpp */,
+                            355B7D342D764FE78A0B005E /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking.hpp */,
+                            08791200A26C49739A0A94DD /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/tracking_c.h */,
+                            BCC8560514EB4D8287F4D308 /* /Users/christian/GIT/opencv/modules/video/include/opencv2/video/video.hpp */,
+                     );
+                     name = video;
+                     sourceTree = "<group>";
+              };
+              F2CFA8B2DB574AB8A52A92E0 /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            67530B2DFD1A4C8F8A458AAF /* opencl */,
+                            9749B51E414544B7B6708A9C /* /Users/christian/GIT/opencv/modules/video/src/affineflow.cpp */,
+                            D2A085D387D34B10BCB38BD3 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_KNN.cpp */,
+                            0351EFF823834D9E8893213D /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix.cpp */,
+                            D17D7A11D24346EB9889C9C8 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix2.cpp */,
+                            A9B04CBD313C46279D1FBE0C /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gmg.cpp */,
+                            A0C2CE9D667E445A93EF094B /* /Users/christian/GIT/opencv/modules/video/src/camshift.cpp */,
+                            BE29FBCA3ADB46BE87BF2DB2 /* /Users/christian/GIT/opencv/modules/video/src/compat_video.cpp */,
+                            C66448F568504A2F9128D359 /* /Users/christian/GIT/opencv/modules/video/src/ecc.cpp */,
+                            F9DB5FE7B9B54B5E856EF14E /* /Users/christian/GIT/opencv/modules/video/src/kalman.cpp */,
+                            4C40C22029D3458B8FF39A2F /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.cpp */,
+                            3387F15DA9E747B08182B857 /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.hpp */,
+                            09AF796261CE42119ED952B6 /* /Users/christian/GIT/opencv/modules/video/src/motempl.cpp */,
+                            D7BFD875853447678F137DBA /* /Users/christian/GIT/opencv/modules/video/src/optflowgf.cpp */,
+                            6A596E44D127446F932BB247 /* /Users/christian/GIT/opencv/modules/video/src/precomp.hpp */,
+                            C1DC125237CA468C8AFDA70B /* /Users/christian/GIT/opencv/modules/video/src/simpleflow.cpp */,
+                            0E02F01029F649CC80488309 /* /Users/christian/GIT/opencv/modules/video/src/tvl1flow.cpp */,
+                            97FBDDAD8BE5422E81E75DCA /* /Users/christian/GIT/opencv/modules/video/src/video_init.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              67530B2DFD1A4C8F8A458AAF /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            05EEDD47912D44F5B9D456C7 /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              05EEDD47912D44F5B9D456C7 /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            629223B4AE7A44D9AAC614DB /* autogenerated */,
+                            5FB460F170B0497392379A92 /* /Users/christian/GIT/opencv/modules/video/src/opencl/bgfg_mog2.cl */,
+                            629AD0E816EB458EA015476F /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_farneback.cl */,
+                            DC8196B84E7B43BDAF91EE22 /* /Users/christian/GIT/opencv/modules/video/src/opencl/optical_flow_tvl1.cl */,
+                            F0093AC7A0F349E883522A19 /* /Users/christian/GIT/opencv/modules/video/src/opencl/pyrlk.cl */,
+                            9A4BF2DE844340949CF3D9B5 /* /Users/christian/GIT/opencv/modules/video/src/opencl/updatemotionhistory.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              629223B4AE7A44D9AAC614DB /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F91C34D59CCE410B97138BBE /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */,
+                            C0B43F172261473BB07A9463 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              2C6CA8387B0849BF80F554DC /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8A57D426604C49CFBD134162 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/cvconfig.h */,
+                            5850F716E8734E4FB3EA1615 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              83D19D5F8AE843D98C02E866 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            E9467BACC04B48C2907D892B /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              06B195FF7CF84867A247C1FD /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            16F6770E4C1648F49EB3385B /* opencv_video */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              6A445089B0A44FB297E38D8A /* opencv_video */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = 9EE022B54DA84D4B81AFED24 /* Build configuration list for PBXNativeTarget "opencv_video" */;
+                     buildPhases = (
+                            7DADFC6B3C4F47D4AB227E5B /* CMake Rules */,
+                            7E9617046DC94DA1B542C233 /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            8740E41CEE0A4501A8E72D63 /* PBXTargetDependency */,
+                     );
+                     name = opencv_video;
+                     productName = opencv_video;
+                     productReference = 16F6770E4C1648F49EB3385B /* opencv_video */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              F80AC3DEE11843FC9D7F2090 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 4AC9FD77CB2C4B2D9BFAB55E /* Build configuration list for PBXProject  "opencv_video" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            45734C1A073242BF8B9CAFFE /* Debug */,
+                            C6CDC2A9A979455D90879CAF /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 3164BFB8BC86496AB90F5023;
+                     projectDirPath = "../../../../../modules/video";
+                     projectRoot = "";
+                     targets = (
+                            05873E83D92B441B91672B6F /* ALL_BUILD */,
+                            F04AD079B77D48C781907D1F /* ZERO_CHECK */,
+                            9EE669886832482887AFEED6 /* install */,
+                            6A445089B0A44FB297E38D8A /* opencv_video */,
+                            8260EA4A250A4089841196BD /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              507654533D8448AFA9A40906 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              A163B7CEB13742A39650A972 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              965DD464BC19412D99054CCB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              67A0C089D3F34315B8765FA5 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              478E3012A56D425CAA4394D3 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              9AE55CD0677C41F9B796C241 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              7DADFC6B3C4F47D4AB227E5B /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/opencv_video_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              C2DC3F7C6F6148EBBF414617 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              AF0CA9CD2FC545EABB41298E /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              7E9617046DC94DA1B542C233 /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            4E95B7B34F3344A5A2C5E624 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/opencl_kernels.cpp */,
+                            7A84E389AD474B79A4D45BD5 /* /Users/christian/GIT/opencv/modules/video/src/affineflow.cpp */,
+                            6B0F9548D6734C6C9D4C5D60 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_KNN.cpp */,
+                            03D394CE339C44D4BF37B34B /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix.cpp */,
+                            317FF087BF6F42A4BF44187B /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gaussmix2.cpp */,
+                            3C47DD61693F49708E7513D5 /* /Users/christian/GIT/opencv/modules/video/src/bgfg_gmg.cpp */,
+                            5A15665116544D809A4B67FB /* /Users/christian/GIT/opencv/modules/video/src/camshift.cpp */,
+                            38479A4816E7406483C060F5 /* /Users/christian/GIT/opencv/modules/video/src/compat_video.cpp */,
+                            E2FF8B102E1C43D792ADACAA /* /Users/christian/GIT/opencv/modules/video/src/ecc.cpp */,
+                            2951431B8DBB4D83B424E9C5 /* /Users/christian/GIT/opencv/modules/video/src/kalman.cpp */,
+                            6D47D767630547698A99B960 /* /Users/christian/GIT/opencv/modules/video/src/lkpyramid.cpp */,
+                            66F491E1959B4311A8D9ED72 /* /Users/christian/GIT/opencv/modules/video/src/motempl.cpp */,
+                            F169F0CA69B34839A9F18F88 /* /Users/christian/GIT/opencv/modules/video/src/optflowgf.cpp */,
+                            69BD435BEFDD48A6B3A3449D /* /Users/christian/GIT/opencv/modules/video/src/simpleflow.cpp */,
+                            FD9FBC6D63B64DDEACDCADBF /* /Users/christian/GIT/opencv/modules/video/src/tvl1flow.cpp */,
+                            04079782F0F348F9A7BAF138 /* /Users/christian/GIT/opencv/modules/video/src/video_init.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              014191168A7B45A99A6D7A7B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F04AD079B77D48C781907D1F /* ZERO_CHECK */;
+                     targetProxy = 7B547117767744CE9B62C9B7 /* PBXContainerItemProxy */;
+              };
+              EDB6C553872D427D993A104A /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 6A445089B0A44FB297E38D8A /* opencv_video */;
+                     targetProxy = 8E352877AD104FDB97F8443B /* PBXContainerItemProxy */;
+              };
+              AF346CEDB9124C328C4C67BA /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 05873E83D92B441B91672B6F /* ALL_BUILD */;
+                     targetProxy = 191CBAA48D154B6B9C345B96 /* PBXContainerItemProxy */;
+              };
+              8740E41CEE0A4501A8E72D63 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F04AD079B77D48C781907D1F /* ZERO_CHECK */;
+                     targetProxy = 86B2C65C8865425F824AF59E /* PBXContainerItemProxy */;
+              };
+              59124F9FDB444E44854E8313 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 05873E83D92B441B91672B6F /* ALL_BUILD */;
+                     targetProxy = C18D32D4314F4644A421EA3F /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              E259E6B4B49D48F6BCB44BDD /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/build";
+                     };
+                     name = Debug;
+              };
+              8BEB022FB65B4EAC95C5D1EA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video/build";
+                     };
+                     name = Release;
+              };
+              E9EFBE073F424AF0A9DF783F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              030CE33AB9784945824BF173 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              C8251A18C83042BCB7D9BBB0 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              43909F5FD34E41DEA254F4C1 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              52CF295A42044BD4AA377BB8 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              5D25624873744DE4B31516DE /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              863B4F9274404CD6828B6C36 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_video;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              58947224506B42C7B3D542FA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_video;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              668E03B9808E47D0BF9A0F26 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              954CDA615BE94A8F8E0F9F18 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video", /Users/christian/GIT/opencv/modules/video/src, /Users/christian/GIT/opencv/modules/video/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7s/modules/video";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              4AC9FD77CB2C4B2D9BFAB55E /* Build configuration list for PBXProject  "opencv_video" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E259E6B4B49D48F6BCB44BDD /* Debug */,
+                            8BEB022FB65B4EAC95C5D1EA /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              5F1394B7570E443FA730F9BD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E9EFBE073F424AF0A9DF783F /* Debug */,
+                            030CE33AB9784945824BF173 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              CCA44D02646F4F48AD545E29 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            C8251A18C83042BCB7D9BBB0 /* Debug */,
+                            43909F5FD34E41DEA254F4C1 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              79EC74ED59F34C1999B7E152 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            52CF295A42044BD4AA377BB8 /* Debug */,
+                            5D25624873744DE4B31516DE /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              9EE022B54DA84D4B81AFED24 /* Build configuration list for PBXNativeTarget "opencv_video" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            863B4F9274404CD6828B6C36 /* Debug */,
+                            58947224506B42C7B3D542FA /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              7E3A32CB613840CABC7A3503 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            668E03B9808E47D0BF9A0F26 /* Debug */,
+                            954CDA615BE94A8F8E0F9F18 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = F80AC3DEE11843FC9D7F2090;
+}

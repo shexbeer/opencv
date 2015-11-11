@@ -1,0 +1,940 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              73F467FA0EB34214A26154A8 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 21411F115373408DA33946A6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            D8861F58BD174DBB9AE7E27F /* CMake Rules */,
+                     );
+                     dependencies = (
+                            CFED7191A0B247D3A2B6E77F /* PBXTargetDependency */,
+                            B7C2EE919ED04527A05D769E /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              ACD9E197A47545968A651774 /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = E11B98282382472C8045136A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            042BF94C8E1845939315A816 /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              44FDA692D0884A5B8ADB9AD1 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 48865F81A7794724AC3091C9 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            F3B03B1B44C4476796858A01 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            057F8BD082A2494799F03BA0 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              705247A35D3C4315AFF49ACF /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 8EA4D9BA0BF345B8BD410964 /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            1E0F45AAEF4A4F0CAEA8EDDC /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            508E8D52531448FC8E02FF3B /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+2AC33D52E79748459A61E7E3 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 0CA50FEAA3FB4376B40DB9F6 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/cvconfig.h */; settings = { COMPILER_FLAGS = ""; }; };
+3C13A7CB401C4B7BBBBC4843 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp */ = {isa = PBXBuildFile; fileRef = 86C7CF907F514582B7F68E33 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+D493C1B773F04FCA9F5AB263 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp.rule */ = {isa = PBXBuildFile; fileRef = 4209EDF135534B5FBA85FBDC /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp.rule */; settings = { COMPILER_FLAGS = ""; }; };
+010EC105E3E3449D81934E3E /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.hpp */ = {isa = PBXBuildFile; fileRef = 59731B784D744E4DAA7CF055 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+038E31A4A504431FBC6EFD38 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = F2BF0574540349D196CD68D6 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/opencv2/opencv_modules.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+9D9B7C724EDE44D9B279C1C1 /* /Users/christian/GIT/opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B3AEBCA75F634705819DD89B /* /Users/christian/GIT/opencv/modules/calib3d/CMakeLists.txt */; settings = { COMPILER_FLAGS = ""; }; };
+25D2C8E896E746EE8BC0E34C /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = 3917195CD76D4833ACE9683D /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+EC59CD1E06C044E887DB0F86 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = 840CD71F199E49DAB01B7B66 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+FBE3A5A62A84403682A2AAD9 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXBuildFile; fileRef = 03471613C00246A09B9C1586 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */; settings = { COMPILER_FLAGS = ""; }; };
+1672DD5430A9466384C0D38D /* /Users/christian/GIT/opencv/modules/calib3d/src/calib3d_init.cpp */ = {isa = PBXBuildFile; fileRef = C7649A04D3C64BD8A81B15D9 /* /Users/christian/GIT/opencv/modules/calib3d/src/calib3d_init.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DF6A6BFE50594E698BBE8867 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXBuildFile; fileRef = 11EC1FDBA82F4498A18E909B /* /Users/christian/GIT/opencv/modules/calib3d/src/calibinit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DF3243D94B924FE89FA85904 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXBuildFile; fileRef = 1232B57A575E40F2B331D148 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibration.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+DB671B01AC674D14B961AD1E /* /Users/christian/GIT/opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXBuildFile; fileRef = 785AEF7BA774444C87208052 /* /Users/christian/GIT/opencv/modules/calib3d/src/checkchessboard.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+1339ADAE6D9A4E97A3941368 /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXBuildFile; fileRef = 7A12AE17BC8640BF8120E2AA /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+3F64E9E67C4840BF9F21FCF6 /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXBuildFile; fileRef = 8430076D63D34A23B0DC354D /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+6321EAA7BF104C00AC22EBB6 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = F0E7CF56180C4F59803BF814 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_ptsetreg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+971D4ED8CC724957AE939243 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_stereo.cpp */ = {isa = PBXBuildFile; fileRef = 1BE66AE3902E48E1BA359687 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_stereo.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+A9AC23BE9394483AB45A006D /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXBuildFile; fileRef = 6267E6EE38BF4BA18EFE1590 /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7748505E25BB4A30BB531DF2 /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.h */ = {isa = PBXBuildFile; fileRef = FF025B2A3E14461B967DC6CD /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.h */; settings = { COMPILER_FLAGS = ""; }; };
+4A7B2148E3BE4A09B1AB2ED2 /* /Users/christian/GIT/opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXBuildFile; fileRef = 03AFEC7334414CD6BCD8B6B7 /* /Users/christian/GIT/opencv/modules/calib3d/src/five-point.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+87FEC86115014A1184766B0A /* /Users/christian/GIT/opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXBuildFile; fileRef = 63B20FA6A7B74E0B908DD44D /* /Users/christian/GIT/opencv/modules/calib3d/src/fundam.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+6BB585D9520E47628792FBBB /* /Users/christian/GIT/opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXBuildFile; fileRef = 50261346E23C4B24BE5E929D /* /Users/christian/GIT/opencv/modules/calib3d/src/levmarq.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+17D4EA8A3B264CE885C4D5CF /* /Users/christian/GIT/opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXBuildFile; fileRef = 60D6D0F21AD94C7FAAC2D3E7 /* /Users/christian/GIT/opencv/modules/calib3d/src/opencl/stereobm.cl */; settings = { COMPILER_FLAGS = ""; }; };
+1F6A917DB7C247D5B97F6BE6 /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXBuildFile; fileRef = 236F8D1169414BB6B7C178C5 /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+F6B2DC2E783D42F2AE37F572 /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.h */ = {isa = PBXBuildFile; fileRef = 70A309F834E142F7B398F77E /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.h */; settings = { COMPILER_FLAGS = ""; }; };
+0EDE70B3DB2E43E28EF7E684 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXBuildFile; fileRef = 60969FBF7B4F426980B44F23 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+75A82E7D9E754AAFBC5E0350 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXBuildFile; fileRef = 0DD70417C71D4842ADDB1608 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.h */; settings = { COMPILER_FLAGS = ""; }; };
+82F2F9E3C666422DB9F8D5F2 /* /Users/christian/GIT/opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXBuildFile; fileRef = 20E58AFC08234C3BAD0D7321 /* /Users/christian/GIT/opencv/modules/calib3d/src/posit.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+C2826FD1B1DE4ACD810B399A /* /Users/christian/GIT/opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = C13238953DCC40848C989013 /* /Users/christian/GIT/opencv/modules/calib3d/src/precomp.hpp */; settings = { COMPILER_FLAGS = ""; }; };
+6813C3DC7EEB4048AA20BA17 /* /Users/christian/GIT/opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = 7B655E45FF1742A9BA0BD0DA /* /Users/christian/GIT/opencv/modules/calib3d/src/ptsetreg.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+133D9861B05248C0914E44EA /* /Users/christian/GIT/opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXBuildFile; fileRef = 3306C9E827704D4B8BC5E063 /* /Users/christian/GIT/opencv/modules/calib3d/src/quadsubpix.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+7AF8D5AAE74E4ACBB6030BB8 /* /Users/christian/GIT/opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXBuildFile; fileRef = 0081B011F21C499FA43CF06B /* /Users/christian/GIT/opencv/modules/calib3d/src/solvepnp.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+11F1F186C3CD49028E5E5E2B /* /Users/christian/GIT/opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXBuildFile; fileRef = BA7B21C969F6414F85CB8504 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereobm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+0A96C7030A2D48678B02C4B8 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXBuildFile; fileRef = 13CC718A71644A76B44E99A5 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereosgbm.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+97B362F818574AF99A79F885 /* /Users/christian/GIT/opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXBuildFile; fileRef = 0E7FC14114424FCC9BCE20F6 /* /Users/christian/GIT/opencv/modules/calib3d/src/triangulate.cpp */; settings = { COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+              6326A935FAA743B58E61D0D9 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              11BDFCD460D940D4B526B313 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+              48C65F8519C8401CAA05AF82 /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              05A9FEA35EFC4D76AC8BA390 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 65D122738A6C440ABB2BF34D /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = F914A333F652414F9DED11E9;
+                     remoteInfo = opencv_calib3d;
+              };
+              461F8B2BD0E1407B944D208D /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 65D122738A6C440ABB2BF34D /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = ACD9E197A47545968A651774;
+                     remoteInfo = ZERO_CHECK;
+              };
+              1AECD212FDAE42FB967E69C9 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 65D122738A6C440ABB2BF34D /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 73F467FA0EB34214A26154A8;
+                     remoteInfo = ALL_BUILD;
+              };
+              809804DEA048426CB44BCFBA /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 65D122738A6C440ABB2BF34D /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = ACD9E197A47545968A651774;
+                     remoteInfo = ZERO_CHECK;
+              };
+              001CEFAA782049788D706D49 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 65D122738A6C440ABB2BF34D /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 73F467FA0EB34214A26154A8;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+B3AEBCA75F634705819DD89B /* /Users/christian/GIT/opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+0CA50FEAA3FB4376B40DB9F6 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "cvconfig.h"; path = "../../ios/build/iPhoneOS-armv7/cvconfig.h"; sourceTree = SOURCE_ROOT; };
+86C7CF907F514582B7F68E33 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "opencl_kernels.cpp"; path = "../../ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp"; sourceTree = SOURCE_ROOT; };
+4209EDF135534B5FBA85FBDC /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "opencl_kernels.cpp.rule"; path = "../../ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp.rule"; sourceTree = SOURCE_ROOT; };
+59731B784D744E4DAA7CF055 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencl_kernels.hpp"; path = "../../ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.hpp"; sourceTree = SOURCE_ROOT; };
+F2BF0574540349D196CD68D6 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "opencv_modules.hpp"; path = "../../ios/build/iPhoneOS-armv7/opencv2/opencv_modules.hpp"; sourceTree = SOURCE_ROOT; };
+3917195CD76D4833ACE9683D /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "calib3d.hpp"; path = "include/opencv2/calib3d.hpp"; sourceTree = SOURCE_ROOT; };
+840CD71F199E49DAB01B7B66 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "calib3d.hpp"; path = "include/opencv2/calib3d/calib3d.hpp"; sourceTree = SOURCE_ROOT; };
+03471613C00246A09B9C1586 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "calib3d_c.h"; path = "include/opencv2/calib3d/calib3d_c.h"; sourceTree = SOURCE_ROOT; };
+C7649A04D3C64BD8A81B15D9 /* /Users/christian/GIT/opencv/modules/calib3d/src/calib3d_init.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calib3d_init.cpp"; path = "src/calib3d_init.cpp"; sourceTree = SOURCE_ROOT; };
+11EC1FDBA82F4498A18E909B /* /Users/christian/GIT/opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calibinit.cpp"; path = "src/calibinit.cpp"; sourceTree = SOURCE_ROOT; };
+1232B57A575E40F2B331D148 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "calibration.cpp"; path = "src/calibration.cpp"; sourceTree = SOURCE_ROOT; };
+785AEF7BA774444C87208052 /* /Users/christian/GIT/opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "checkchessboard.cpp"; path = "src/checkchessboard.cpp"; sourceTree = SOURCE_ROOT; };
+7A12AE17BC8640BF8120E2AA /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "circlesgrid.cpp"; path = "src/circlesgrid.cpp"; sourceTree = SOURCE_ROOT; };
+8430076D63D34A23B0DC354D /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "circlesgrid.hpp"; path = "src/circlesgrid.hpp"; sourceTree = SOURCE_ROOT; };
+F0E7CF56180C4F59803BF814 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_ptsetreg.cpp"; path = "src/compat_ptsetreg.cpp"; sourceTree = SOURCE_ROOT; };
+1BE66AE3902E48E1BA359687 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_stereo.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "compat_stereo.cpp"; path = "src/compat_stereo.cpp"; sourceTree = SOURCE_ROOT; };
+6267E6EE38BF4BA18EFE1590 /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "epnp.cpp"; path = "src/epnp.cpp"; sourceTree = SOURCE_ROOT; };
+FF025B2A3E14461B967DC6CD /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "epnp.h"; path = "src/epnp.h"; sourceTree = SOURCE_ROOT; };
+03AFEC7334414CD6BCD8B6B7 /* /Users/christian/GIT/opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "five-point.cpp"; path = "src/five-point.cpp"; sourceTree = SOURCE_ROOT; };
+63B20FA6A7B74E0B908DD44D /* /Users/christian/GIT/opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "fundam.cpp"; path = "src/fundam.cpp"; sourceTree = SOURCE_ROOT; };
+50261346E23C4B24BE5E929D /* /Users/christian/GIT/opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "levmarq.cpp"; path = "src/levmarq.cpp"; sourceTree = SOURCE_ROOT; };
+60D6D0F21AD94C7FAAC2D3E7 /* /Users/christian/GIT/opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = "stereobm.cl"; path = "src/opencl/stereobm.cl"; sourceTree = SOURCE_ROOT; };
+236F8D1169414BB6B7C178C5 /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "p3p.cpp"; path = "src/p3p.cpp"; sourceTree = SOURCE_ROOT; };
+70A309F834E142F7B398F77E /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "p3p.h"; path = "src/p3p.h"; sourceTree = SOURCE_ROOT; };
+60969FBF7B4F426980B44F23 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "polynom_solver.cpp"; path = "src/polynom_solver.cpp"; sourceTree = SOURCE_ROOT; };
+0DD70417C71D4842ADDB1608 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXFileReference; explicitFileType = "sourcecode.c.h"; fileEncoding = 4; name = "polynom_solver.h"; path = "src/polynom_solver.h"; sourceTree = SOURCE_ROOT; };
+20E58AFC08234C3BAD0D7321 /* /Users/christian/GIT/opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "posit.cpp"; path = "src/posit.cpp"; sourceTree = SOURCE_ROOT; };
+C13238953DCC40848C989013 /* /Users/christian/GIT/opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.h"; fileEncoding = 4; name = "precomp.hpp"; path = "src/precomp.hpp"; sourceTree = SOURCE_ROOT; };
+7B655E45FF1742A9BA0BD0DA /* /Users/christian/GIT/opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "ptsetreg.cpp"; path = "src/ptsetreg.cpp"; sourceTree = SOURCE_ROOT; };
+3306C9E827704D4B8BC5E063 /* /Users/christian/GIT/opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "quadsubpix.cpp"; path = "src/quadsubpix.cpp"; sourceTree = SOURCE_ROOT; };
+0081B011F21C499FA43CF06B /* /Users/christian/GIT/opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "solvepnp.cpp"; path = "src/solvepnp.cpp"; sourceTree = SOURCE_ROOT; };
+BA7B21C969F6414F85CB8504 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereobm.cpp"; path = "src/stereobm.cpp"; sourceTree = SOURCE_ROOT; };
+13CC718A71644A76B44E99A5 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "stereosgbm.cpp"; path = "src/stereosgbm.cpp"; sourceTree = SOURCE_ROOT; };
+0E7FC14114424FCC9BCE20F6 /* /Users/christian/GIT/opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXFileReference; explicitFileType = "sourcecode.cpp.cpp"; fileEncoding = 4; name = "triangulate.cpp"; path = "src/triangulate.cpp"; sourceTree = SOURCE_ROOT; };
+1B700B1B77784041B31E2E7B /* opencv_calib3d */ = {isa = PBXFileReference; explicitFileType = "archive.ar"; path = "libopencv_calib3d.a"; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              9BAF055033D649C79372B808  = {
+                     isa = PBXGroup;
+                     children = (
+                            87F90ED5638A46CCB040221B /* Sources */,
+                            D9719C80C73E4EA4A8898D1C /* Resources */,
+                            9AFD9E1E23E04850BBFF4A68 /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              87F90ED5638A46CCB040221B /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9B0B11A5BD8643EDAA3E9476 /* ALL_BUILD */,
+                            2AFEF2E874584A91AA1876E9 /* ZERO_CHECK */,
+                            6467F6F2BDB84E50961B5671 /* modules */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              D9719C80C73E4EA4A8898D1C /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              9B0B11A5BD8643EDAA3E9476 /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            8EA5FF680F714E08AC1626F3 /* CMake Rules */,
+                            B3AEBCA75F634705819DD89B /* /Users/christian/GIT/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              8EA5FF680F714E08AC1626F3 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              2AFEF2E874584A91AA1876E9 /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            F63D3DFEE28F4D6FB98D3939 /* CMake Rules */,
+                            B3AEBCA75F634705819DD89B /* /Users/christian/GIT/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              F63D3DFEE28F4D6FB98D3939 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              6467F6F2BDB84E50961B5671 /* modules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            64189B15A6C4456087F3F246 /* opencv_calib3d */,
+                     );
+                     name = modules;
+                     sourceTree = "<group>";
+              };
+              64189B15A6C4456087F3F246 /* opencv_calib3d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4E02A70BBCAA45F1A6801C90 /* Include */,
+                            0022741129F547FABB01F5CA /* Src */,
+                            E6AC398AD8F7496292E0F30E /* Header Files */,
+                            7220E1AC5CAA4877810650E5 /* CMake Rules */,
+                            B3AEBCA75F634705819DD89B /* /Users/christian/GIT/opencv/modules/calib3d/CMakeLists.txt */,
+                     );
+                     name = opencv_calib3d;
+                     sourceTree = "<group>";
+              };
+              4E02A70BBCAA45F1A6801C90 /* Include */ = {
+                     isa = PBXGroup;
+                     children = (
+                            B0913844EE0D45E88F7A92A7 /* opencv2 */,
+                     );
+                     name = Include;
+                     sourceTree = "<group>";
+              };
+              B0913844EE0D45E88F7A92A7 /* opencv2 */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1579FF58268B46FA81F0DF1B /* calib3d */,
+                            3917195CD76D4833ACE9683D /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d.hpp */,
+                     );
+                     name = opencv2;
+                     sourceTree = "<group>";
+              };
+              1579FF58268B46FA81F0DF1B /* calib3d */ = {
+                     isa = PBXGroup;
+                     children = (
+                            840CD71F199E49DAB01B7B66 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */,
+                            03471613C00246A09B9C1586 /* /Users/christian/GIT/opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */,
+                     );
+                     name = calib3d;
+                     sourceTree = "<group>";
+              };
+              0022741129F547FABB01F5CA /* Src */ = {
+                     isa = PBXGroup;
+                     children = (
+                            766EBF4F3DE749E3AFEF647D /* opencl */,
+                            C7649A04D3C64BD8A81B15D9 /* /Users/christian/GIT/opencv/modules/calib3d/src/calib3d_init.cpp */,
+                            11EC1FDBA82F4498A18E909B /* /Users/christian/GIT/opencv/modules/calib3d/src/calibinit.cpp */,
+                            1232B57A575E40F2B331D148 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibration.cpp */,
+                            785AEF7BA774444C87208052 /* /Users/christian/GIT/opencv/modules/calib3d/src/checkchessboard.cpp */,
+                            7A12AE17BC8640BF8120E2AA /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.cpp */,
+                            8430076D63D34A23B0DC354D /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.hpp */,
+                            F0E7CF56180C4F59803BF814 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+                            1BE66AE3902E48E1BA359687 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_stereo.cpp */,
+                            6267E6EE38BF4BA18EFE1590 /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.cpp */,
+                            FF025B2A3E14461B967DC6CD /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.h */,
+                            03AFEC7334414CD6BCD8B6B7 /* /Users/christian/GIT/opencv/modules/calib3d/src/five-point.cpp */,
+                            63B20FA6A7B74E0B908DD44D /* /Users/christian/GIT/opencv/modules/calib3d/src/fundam.cpp */,
+                            50261346E23C4B24BE5E929D /* /Users/christian/GIT/opencv/modules/calib3d/src/levmarq.cpp */,
+                            236F8D1169414BB6B7C178C5 /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.cpp */,
+                            70A309F834E142F7B398F77E /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.h */,
+                            60969FBF7B4F426980B44F23 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.cpp */,
+                            0DD70417C71D4842ADDB1608 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.h */,
+                            20E58AFC08234C3BAD0D7321 /* /Users/christian/GIT/opencv/modules/calib3d/src/posit.cpp */,
+                            C13238953DCC40848C989013 /* /Users/christian/GIT/opencv/modules/calib3d/src/precomp.hpp */,
+                            7B655E45FF1742A9BA0BD0DA /* /Users/christian/GIT/opencv/modules/calib3d/src/ptsetreg.cpp */,
+                            3306C9E827704D4B8BC5E063 /* /Users/christian/GIT/opencv/modules/calib3d/src/quadsubpix.cpp */,
+                            0081B011F21C499FA43CF06B /* /Users/christian/GIT/opencv/modules/calib3d/src/solvepnp.cpp */,
+                            BA7B21C969F6414F85CB8504 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereobm.cpp */,
+                            13CC718A71644A76B44E99A5 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereosgbm.cpp */,
+                            0E7FC14114424FCC9BCE20F6 /* /Users/christian/GIT/opencv/modules/calib3d/src/triangulate.cpp */,
+                     );
+                     name = Src;
+                     sourceTree = "<group>";
+              };
+              766EBF4F3DE749E3AFEF647D /* opencl */ = {
+                     isa = PBXGroup;
+                     children = (
+                            7D569AF5CD9C4A62AA388B1E /* kernels */,
+                     );
+                     name = opencl;
+                     sourceTree = "<group>";
+              };
+              7D569AF5CD9C4A62AA388B1E /* kernels */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4A6073E78F764EDB8A49FDCC /* autogenerated */,
+                            60D6D0F21AD94C7FAAC2D3E7 /* /Users/christian/GIT/opencv/modules/calib3d/src/opencl/stereobm.cl */,
+                     );
+                     name = kernels;
+                     sourceTree = "<group>";
+              };
+              4A6073E78F764EDB8A49FDCC /* autogenerated */ = {
+                     isa = PBXGroup;
+                     children = (
+                            86C7CF907F514582B7F68E33 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp */,
+                            59731B784D744E4DAA7CF055 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.hpp */,
+                     );
+                     name = autogenerated;
+                     sourceTree = "<group>";
+              };
+              E6AC398AD8F7496292E0F30E /* Header Files */ = {
+                     isa = PBXGroup;
+                     children = (
+                            0CA50FEAA3FB4376B40DB9F6 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/cvconfig.h */,
+                            F2BF0574540349D196CD68D6 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/opencv2/opencv_modules.hpp */,
+                     );
+                     name = "Header Files";
+                     sourceTree = "<group>";
+              };
+              7220E1AC5CAA4877810650E5 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                            4209EDF135534B5FBA85FBDC /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp.rule */,
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              9AFD9E1E23E04850BBFF4A68 /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                            1B700B1B77784041B31E2E7B /* opencv_calib3d */,
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+              F914A333F652414F9DED11E9 /* opencv_calib3d */ = {
+                     isa = PBXNativeTarget;
+                     buildConfigurationList = C602D8842AEC43B59E6A8443 /* Build configuration list for PBXNativeTarget "opencv_calib3d" */;
+                     buildPhases = (
+                            B63CE77BEA734D4F9FB346E8 /* CMake Rules */,
+                            AA7D6AFDADC641B7B7E4C76E /* Sources */,
+                     );
+                     buildRules = (
+                     );
+                     dependencies = (
+                            A07932C030FB4FDCB7A199C5 /* PBXTargetDependency */,
+                     );
+                     name = opencv_calib3d;
+                     productName = opencv_calib3d;
+                     productReference = 1B700B1B77784041B31E2E7B /* opencv_calib3d */;
+                     productType = "com.apple.product-type.library.static";
+              };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+              65D122738A6C440ABB2BF34D /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = 3A6529A9C8544E9B8FFA6A27 /* Build configuration list for PBXProject  "opencv_calib3d" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            11BDFCD460D940D4B526B313 /* Debug */,
+                            48C65F8519C8401CAA05AF82 /* Release */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = 9BAF055033D649C79372B808;
+                     projectDirPath = "../../../../../modules/calib3d";
+                     projectRoot = "";
+                     targets = (
+                            73F467FA0EB34214A26154A8 /* ALL_BUILD */,
+                            ACD9E197A47545968A651774 /* ZERO_CHECK */,
+                            44FDA692D0884A5B8ADB9AD1 /* install */,
+                            F914A333F652414F9DED11E9 /* opencv_calib3d */,
+                            705247A35D3C4315AFF49ACF /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              9D588178DD8744C9B1872581 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D8861F58BD174DBB9AE7E27F /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              40AA0298D7C4480E8D57DF23 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              042BF94C8E1845939315A816 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              B3B2E42C46E54F5EA7EA0DE7 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              F3B03B1B44C4476796858A01 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              B63CE77BEA734D4F9FB346E8 /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/CMakeScripts/opencv_calib3d_cmakeRulesBuildPhase.make$CONFIGURATION cmake_check_multiple_outputs all";
+                     showEnvVarsInLog = 0;
+              };
+              929F613CB4A348FA9FE189CC /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              1E0F45AAEF4A4F0CAEA8EDDC /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d -f /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+              AA7D6AFDADC641B7B7E4C76E /* Sources */ = {
+                     isa = PBXSourcesBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                            3C13A7CB401C4B7BBBBC4843 /* /Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/opencl_kernels.cpp */,
+                            1672DD5430A9466384C0D38D /* /Users/christian/GIT/opencv/modules/calib3d/src/calib3d_init.cpp */,
+                            DF6A6BFE50594E698BBE8867 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibinit.cpp */,
+                            DF3243D94B924FE89FA85904 /* /Users/christian/GIT/opencv/modules/calib3d/src/calibration.cpp */,
+                            DB671B01AC674D14B961AD1E /* /Users/christian/GIT/opencv/modules/calib3d/src/checkchessboard.cpp */,
+                            1339ADAE6D9A4E97A3941368 /* /Users/christian/GIT/opencv/modules/calib3d/src/circlesgrid.cpp */,
+                            6321EAA7BF104C00AC22EBB6 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+                            971D4ED8CC724957AE939243 /* /Users/christian/GIT/opencv/modules/calib3d/src/compat_stereo.cpp */,
+                            A9AC23BE9394483AB45A006D /* /Users/christian/GIT/opencv/modules/calib3d/src/epnp.cpp */,
+                            4A7B2148E3BE4A09B1AB2ED2 /* /Users/christian/GIT/opencv/modules/calib3d/src/five-point.cpp */,
+                            87FEC86115014A1184766B0A /* /Users/christian/GIT/opencv/modules/calib3d/src/fundam.cpp */,
+                            6BB585D9520E47628792FBBB /* /Users/christian/GIT/opencv/modules/calib3d/src/levmarq.cpp */,
+                            1F6A917DB7C247D5B97F6BE6 /* /Users/christian/GIT/opencv/modules/calib3d/src/p3p.cpp */,
+                            0EDE70B3DB2E43E28EF7E684 /* /Users/christian/GIT/opencv/modules/calib3d/src/polynom_solver.cpp */,
+                            82F2F9E3C666422DB9F8D5F2 /* /Users/christian/GIT/opencv/modules/calib3d/src/posit.cpp */,
+                            6813C3DC7EEB4048AA20BA17 /* /Users/christian/GIT/opencv/modules/calib3d/src/ptsetreg.cpp */,
+                            133D9861B05248C0914E44EA /* /Users/christian/GIT/opencv/modules/calib3d/src/quadsubpix.cpp */,
+                            7AF8D5AAE74E4ACBB6030BB8 /* /Users/christian/GIT/opencv/modules/calib3d/src/solvepnp.cpp */,
+                            11F1F186C3CD49028E5E5E2B /* /Users/christian/GIT/opencv/modules/calib3d/src/stereobm.cpp */,
+                            0A96C7030A2D48678B02C4B8 /* /Users/christian/GIT/opencv/modules/calib3d/src/stereosgbm.cpp */,
+                            97B362F818574AF99A79F885 /* /Users/christian/GIT/opencv/modules/calib3d/src/triangulate.cpp */,
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+              };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              CFED7191A0B247D3A2B6E77F /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = F914A333F652414F9DED11E9 /* opencv_calib3d */;
+                     targetProxy = 05A9FEA35EFC4D76AC8BA390 /* PBXContainerItemProxy */;
+              };
+              B7C2EE919ED04527A05D769E /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = ACD9E197A47545968A651774 /* ZERO_CHECK */;
+                     targetProxy = 461F8B2BD0E1407B944D208D /* PBXContainerItemProxy */;
+              };
+              057F8BD082A2494799F03BA0 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 73F467FA0EB34214A26154A8 /* ALL_BUILD */;
+                     targetProxy = 1AECD212FDAE42FB967E69C9 /* PBXContainerItemProxy */;
+              };
+              A07932C030FB4FDCB7A199C5 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = ACD9E197A47545968A651774 /* ZERO_CHECK */;
+                     targetProxy = 809804DEA048426CB44BCFBA /* PBXContainerItemProxy */;
+              };
+              508E8D52531448FC8E02FF3B /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 73F467FA0EB34214A26154A8 /* ALL_BUILD */;
+                     targetProxy = 001CEFAA782049788D706D49 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              5E901BEAE5C646E9A05F3069 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/build";
+                     };
+                     name = Debug;
+              };
+              20494F503ACB41789B9E0DB0 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d/build";
+                     };
+                     name = Release;
+              };
+              E5EF3CD1C7C1495285726E84 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              84ED9FD4DB6A4EDFB2B86043 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              01425038542042098F942A29 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              916113B0647C42BDAEB6D97D /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              1F64750DBD4D476AAE0B38FD /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              2DEDDB429362497D96017204 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              B1987E90DB85441B99F8CD29 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/lib/Debug";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libstdc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC           -DDEBUG -D_DEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_calib3d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              9F211A356BCF49E79053BD1D /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            CONFIGURATION_BUILD_DIR = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/lib/Release";
+                            EXECUTABLE_PREFIX = lib;
+                            EXECUTABLE_SUFFIX = ".a";
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 3;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", OPENCV_NOSTL, "'__OPENCV_BUILD=1'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            LIBRARY_STYLE = STATIC;
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "-Wno-implicit-function-declaration -fPIC       -DNDEBUG  -DNDEBUG  ";
+                            OTHER_CPLUSPLUSFLAGS = "-stdlib=libstdc++ -headerpad_max_install_names -fvisibility=hidden -fvisibility-inlines-hidden -fPIC   -DNDEBUG     -fomit-frame-pointer -ffast-math  -DNDEBUG  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = opencv_calib3d;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              F5625194F65F4D6EAD6AB3BF /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B880807F82D24BDDB3B87135 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            HEADER_SEARCH_PATHS = (/Users/christian/GIT/opencv/modules/features2d/include, /Users/christian/GIT/opencv/modules/highgui/include, /Users/christian/GIT/opencv/modules/imgproc/include, /Users/christian/GIT/opencv/modules/flann/include, /Users/christian/GIT/opencv/modules/core/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d", /Users/christian/GIT/opencv/modules/calib3d/src, /Users/christian/GIT/opencv/modules/calib3d/include, "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7", /usr/local/include/eigen3, );
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/christian/GIT/opencv/ios/build/iPhoneOS-armv7/modules/calib3d";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              3A6529A9C8544E9B8FFA6A27 /* Build configuration list for PBXProject  "opencv_calib3d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            5E901BEAE5C646E9A05F3069 /* Debug */,
+                            20494F503ACB41789B9E0DB0 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              21411F115373408DA33946A6 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            E5EF3CD1C7C1495285726E84 /* Debug */,
+                            84ED9FD4DB6A4EDFB2B86043 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              E11B98282382472C8045136A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            01425038542042098F942A29 /* Debug */,
+                            916113B0647C42BDAEB6D97D /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              48865F81A7794724AC3091C9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            1F64750DBD4D476AAE0B38FD /* Debug */,
+                            2DEDDB429362497D96017204 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              C602D8842AEC43B59E6A8443 /* Build configuration list for PBXNativeTarget "opencv_calib3d" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B1987E90DB85441B99F8CD29 /* Debug */,
+                            9F211A356BCF49E79053BD1D /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+              8EA4D9BA0BF345B8BD410964 /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            F5625194F65F4D6EAD6AB3BF /* Debug */,
+                            B880807F82D24BDDB3B87135 /* Release */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Debug;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 65D122738A6C440ABB2BF34D;
+}

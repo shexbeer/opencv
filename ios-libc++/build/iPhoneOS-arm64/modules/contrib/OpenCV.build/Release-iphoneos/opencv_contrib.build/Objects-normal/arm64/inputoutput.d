@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/christian/GIT/opencv/modules/contrib/src/inputoutput.cpp \
+  /Users/christian/GIT/opencv/modules/contrib/include/opencv2/contrib.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/cvdef.h \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/version.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/base.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/cvstd.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/ptr.inl.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/traits.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/matx.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/types.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/mat.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/bufferpool.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/mat.inl.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/persistence.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/operations.hpp \
+  /Users/christian/GIT/opencv/modules/core/include/opencv2/core/cvstd.inl.hpp \
+  /Users/christian/GIT/opencv/modules/imgproc/include/opencv2/imgproc.hpp \
+  /Users/christian/GIT/opencv/modules/features2d/include/opencv2/features2d.hpp \
+  /Users/christian/GIT/opencv/modules/flann/include/opencv2/flann/miniflann.hpp \
+  /Users/christian/GIT/opencv/modules/flann/include/opencv2/flann/defines.h \
+  /Users/christian/GIT/opencv/modules/flann/include/opencv2/flann/config.h \
+  /Users/christian/GIT/opencv/modules/objdetect/include/opencv2/objdetect.hpp \
+  /Users/christian/GIT/opencv/modules/objdetect/include/opencv2/objdetect/linemod.hpp \
+  /Users/christian/GIT/opencv/modules/objdetect/include/opencv2/objdetect/erfilter.hpp \
+  /Users/christian/GIT/opencv/modules/contrib/include/opencv2/contrib/openfabmap.hpp \
+  /Users/christian/GIT/opencv/ios/build/iPhoneOS-arm64/cvconfig.h
